@@ -1,5 +1,0 @@
-[0/1] Re-running CMake...
--- git rev-parse returned 'fatal: 不是 git 仓库（或者任何父目录）：.git'
--- Could not use 'git describe' to determine PROJECT_VER.
--- Building ESP-IDF components for target esp32
--- Project sdkconfig file /home/dt/esp/5_35_LVGL_Full_Test-S024/sdkconfig
