@@ -1,0 +1,79 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:127: warning: "MAX_HTTP_OUTPUT_BUFFER" redefined
+  127 | #define MAX_HTTP_OUTPUT_BUFFER 2048
+      | 
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:116:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:49: note: this is the location of the previous definition
+   49 | #define MAX_HTTP_OUTPUT_BUFFER 1300
+      | 
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:57:13: warning: 'freeBuffer' declared 'static' but never defined [-Wunused-function]
+   57 | static void freeBuffer(char *buf, int bufSize);
+      |             ^~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:58:13: warning: 'cJSON_parse_task' declared 'static' but never defined [-Wunused-function]
+   58 | static void cJSON_parse_task(char* text);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:59:13: warning: 'http_client_task' declared 'static' but never defined [-Wunused-function]
+   59 | static void http_client_task(void *pvParameters);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:60:13: warning: 'event_handler' declared 'static' but never defined [-Wunused-function]
+   60 | static void event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:62:13: warning: 'initialise_wifi' declared 'static' but never defined [-Wunused-function]
+   62 | static void initialise_wifi(void);
+      |             ^~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:117:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:21:23: warning: 'example_timer_on_alarm_cb_v1' declared 'static' but never defined [-Wunused-function]
+   21 | static bool IRAM_ATTR example_timer_on_alarm_cb_v1(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:22:23: warning: 'example_timer_on_alarm_cb_v2' declared 'static' but never defined [-Wunused-function]
+   22 | static bool IRAM_ATTR example_timer_on_alarm_cb_v2(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:23:23: warning: 'example_timer_on_alarm_cb_v3' declared 'static' but never defined [-Wunused-function]
+   23 | static bool IRAM_ATTR example_timer_on_alarm_cb_v3(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:14:20: warning: 'TIEMRTAG' defined but not used [-Wunused-variable]
+   14 | static const char *TIEMRTAG = "timer";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:48:20: warning: 'HTTP_TAG' defined but not used [-Wunused-variable]
+   48 | static const char *HTTP_TAG = "httpTask";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:46:13: warning: 'gl_got_ip' defined but not used [-Wunused-variable]
+   46 | static bool gl_got_ip = false;
+      |             ^~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:45:12: warning: 'gl_sta_ssid_len' defined but not used [-Wunused-variable]
+   45 | static int gl_sta_ssid_len = 0;
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:44:16: warning: 'gl_sta_ssid' defined but not used [-Wunused-variable]
+   44 | static uint8_t gl_sta_ssid[32];
+      |                ^~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:43:16: warning: 'gl_sta_bssid' defined but not used [-Wunused-variable]
+   43 | static uint8_t gl_sta_bssid[6];
+      |                ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:42:13: warning: 'gl_sta_connected' defined but not used [-Wunused-variable]
+   42 | static bool gl_sta_connected = false;
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:39:16: warning: 'WiFi_retry_num' defined but not used [-Wunused-variable]
+   39 | static uint8_t WiFi_retry_num = 0;
+      |                ^~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:38:20: warning: 'WiFi_TAG' defined but not used [-Wunused-variable]
+   38 | static const char *WiFi_TAG = "wifi_sta";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:35:27: warning: 'wifi_event_group' defined but not used [-Wunused-variable]
+   35 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable lvgl-demo.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+[9/9] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dt/esp/5_35_LVGL_Full_Test-S024/build/partition_table/partition-table.bin /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+lvgl-demo.bin binary size 0x104ed0 bytes. Smallest app partition is 0x271000 bytes. 0x16c130 bytes (58%) free.

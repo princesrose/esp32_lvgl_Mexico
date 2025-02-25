@@ -1,0 +1,102 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/freertosTest.c.obj
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c: In function 'timerTest':
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:19:40: warning: passing argument 2 of 'gptimer_get_raw_count' from incompatible pointer type [-Wincompatible-pointer-types]
+   19 |         gptimer_get_raw_count(gptimer, &value);
+      |                                        ^~~~~~
+      |                                        |
+      |                                        int *
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:11,
+                 from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:1:
+/home/dt/esp/esp-idf/components/esp_driver_gptimer/include/driver/gptimer.h:100:67: note: expected 'uint64_t *' {aka 'long long unsigned int *'} but argument is of type 'int *'
+  100 | esp_err_t gptimer_get_raw_count(gptimer_handle_t timer, uint64_t *value);
+      |                                                         ~~~~~~~~~~^~~~~
+[4/10] Completed 'bootloader'
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable lvgl-demo.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+[9/10] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dt/esp/5_35_LVGL_Full_Test-S024/build/partition_table/partition-table.bin /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+lvgl-demo.bin binary size 0x105d50 bytes. Smallest app partition is 0x300000 bytes. 0x1fa2b0 bytes (66%) free.
+[9/10] cd /home/dt/esp/esp-idf/components/esptool_py && /opt/cmake-3.28.3-linux-x86_64/bin/cmake -D IDF_PATH=/home/dt/esp/esp-idf -D "SERIAL_TOOL=/home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python;;/home/dt/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/dt/esp/5_35_LVGL_Full_Test-S024/build -P /home/dt/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 lvgl-demo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:1e:94:e8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00115fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16376...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16376 compressed) at 0x00001000 in 0.7 seconds (effective 285.7 kbit/s)...
+Hash of data verified.
+Compressed 1072464 bytes to 670963...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cf9e... (4 %)
+Writing at 0x00027862... (7 %)
+Writing at 0x0002da2b... (9 %)
+Writing at 0x00032ab3... (12 %)
+Writing at 0x0003bfd5... (14 %)
+Writing at 0x00044006... (17 %)
+Writing at 0x00049bfd... (19 %)
+Writing at 0x0004fdbd... (21 %)
+Writing at 0x000560ce... (24 %)
+Writing at 0x0005dbad... (26 %)
+Writing at 0x00063b1d... (29 %)
+Writing at 0x00069a9f... (31 %)
+Writing at 0x0006f97e... (34 %)
+Writing at 0x000757c9... (36 %)
+Writing at 0x0007b488... (39 %)
+Writing at 0x00081cc1... (41 %)
+Writing at 0x00086de7... (43 %)
+Writing at 0x0008c2f1... (46 %)
+Writing at 0x000916e2... (48 %)
+Writing at 0x00096afc... (51 %)
+Writing at 0x0009c1af... (53 %)
+Writing at 0x000a194c... (56 %)
+Writing at 0x000a78bf... (58 %)
+Writing at 0x000ad170... (60 %)
+Writing at 0x000b2eff... (63 %)
+Writing at 0x000b8c01... (65 %)
+Writing at 0x000be50c... (68 %)
+Writing at 0x000c3f6e... (70 %)
+Writing at 0x000c9e1c... (73 %)
+Writing at 0x000d029b... (75 %)
+Writing at 0x000d5d59... (78 %)
+Writing at 0x000db7c6... (80 %)
+Writing at 0x000e120d... (82 %)
+Writing at 0x000e7481... (85 %)
+Writing at 0x000f2d90... (87 %)
+Writing at 0x000f8d0a... (90 %)
+Writing at 0x000ff3b7... (92 %)
+Writing at 0x00104dc2... (95 %)
+Writing at 0x0010ae21... (97 %)
+Writing at 0x0011098e... (100 %)
+Wrote 1072464 bytes (670963 compressed) at 0x00010000 in 15.2 seconds (effective 562.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 462.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

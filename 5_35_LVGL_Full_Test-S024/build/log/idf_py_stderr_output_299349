@@ -1,0 +1,40 @@
+CMake Error at /home/dt/esp/esp-idf/tools/cmake/build.cmake:556 (include):
+  include could not find requested file:
+
+    /home/dt/esp/5_35_LVGL_Full_Test-S024/build/managed_components_list.temp.cmake
+Call Stack (most recent call first):
+  /home/dt/esp/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:12 (project)
+
+
+CMake Error at /home/dt/esp/esp-idf/tools/cmake/component.cmake:251 (message):
+  Traceback (most recent call last):
+
+    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+      return _run_code(code, main_globals, None,
+    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+      exec(code, run_globals)
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/prepare_components/__main__.py", line 6, in <module>
+      main()
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/prepare_components/prepare.py", line 132, in main
+      args.func(args)
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/prepare_components/prepare.py", line 39, in inject_requirements
+      ComponentManager(
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/core.py", line 111, in wrapper
+      return func(self, *args, **kwargs)
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/core.py", line 823, in inject_requirements
+      requirements = requirements_manager.load()
+    File "/home/dt/.espressif/python_env/idf5.4_py3.8_env/lib/python3.8/site-packages/idf_component_manager/cmake_component_requirements.py", line 96, in load
+      with open(self.path, mode='r', encoding='utf-8') as f:
+
+  FileNotFoundError: [Errno 2] No such file or directory:
+  '/home/dt/esp/5_35_LVGL_Full_Test-S024/build/component_requires.temp.cmake'
+
+
+Call Stack (most recent call first):
+  /home/dt/esp/esp-idf/tools/cmake/build.cmake:587 (__component_get_requirements)
+  /home/dt/esp/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:12 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

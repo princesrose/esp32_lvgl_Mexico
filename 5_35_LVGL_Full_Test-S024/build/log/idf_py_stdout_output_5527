@@ -1,0 +1,67 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: 不是 git 仓库（或者任何父目录）：.git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/dt/esp/5_35_LVGL_Full_Test-S024/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "lvgl-demo" version: 1
+-- Adding linker script /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lv_examples lvgl lvgl_esp32_drivers lvgl_tft lvgl_touch lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocol_examples_common protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/dt/esp/esp-idf/components/app_trace /home/dt/esp/esp-idf/components/app_update /home/dt/esp/esp-idf/components/bootloader /home/dt/esp/esp-idf/components/bootloader_support /home/dt/esp/esp-idf/components/bt /home/dt/esp/esp-idf/components/cmock /home/dt/esp/esp-idf/components/console /home/dt/esp/esp-idf/components/cxx /home/dt/esp/esp-idf/components/driver /home/dt/esp/esp-idf/components/efuse /home/dt/esp/esp-idf/components/esp-tls /home/dt/esp/esp-idf/components/esp_adc /home/dt/esp/esp-idf/components/esp_app_format /home/dt/esp/esp-idf/components/esp_bootloader_format /home/dt/esp/esp-idf/components/esp_coex /home/dt/esp/esp-idf/components/esp_common /home/dt/esp/esp-idf/components/esp_driver_ana_cmpr /home/dt/esp/esp-idf/components/esp_driver_cam /home/dt/esp/esp-idf/components/esp_driver_dac /home/dt/esp/esp-idf/components/esp_driver_gpio /home/dt/esp/esp-idf/components/esp_driver_gptimer /home/dt/esp/esp-idf/components/esp_driver_i2c /home/dt/esp/esp-idf/components/esp_driver_i2s /home/dt/esp/esp-idf/components/esp_driver_isp /home/dt/esp/esp-idf/components/esp_driver_jpeg /home/dt/esp/esp-idf/components/esp_driver_ledc /home/dt/esp/esp-idf/components/esp_driver_mcpwm /home/dt/esp/esp-idf/components/esp_driver_parlio /home/dt/esp/esp-idf/components/esp_driver_pcnt /home/dt/esp/esp-idf/components/esp_driver_ppa /home/dt/esp/esp-idf/components/esp_driver_rmt /home/dt/esp/esp-idf/components/esp_driver_sdio /home/dt/esp/esp-idf/components/esp_driver_sdm /home/dt/esp/esp-idf/components/esp_driver_sdmmc /home/dt/esp/esp-idf/components/esp_driver_sdspi /home/dt/esp/esp-idf/components/esp_driver_spi /home/dt/esp/esp-idf/components/esp_driver_tsens /home/dt/esp/esp-idf/components/esp_driver_uart /home/dt/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/dt/esp/esp-idf/components/esp_eth /home/dt/esp/esp-idf/components/esp_event /home/dt/esp/esp-idf/components/esp_gdbstub /home/dt/esp/esp-idf/components/esp_hid /home/dt/esp/esp-idf/components/esp_http_client /home/dt/esp/esp-idf/components/esp_http_server /home/dt/esp/esp-idf/components/esp_https_ota /home/dt/esp/esp-idf/components/esp_https_server /home/dt/esp/esp-idf/components/esp_hw_support /home/dt/esp/esp-idf/components/esp_lcd /home/dt/esp/esp-idf/components/esp_local_ctrl /home/dt/esp/esp-idf/components/esp_mm /home/dt/esp/esp-idf/components/esp_netif /home/dt/esp/esp-idf/components/esp_netif_stack /home/dt/esp/esp-idf/components/esp_partition /home/dt/esp/esp-idf/components/esp_phy /home/dt/esp/esp-idf/components/esp_pm /home/dt/esp/esp-idf/components/esp_psram /home/dt/esp/esp-idf/components/esp_ringbuf /home/dt/esp/esp-idf/components/esp_rom /home/dt/esp/esp-idf/components/esp_system /home/dt/esp/esp-idf/components/esp_timer /home/dt/esp/esp-idf/components/esp_vfs_console /home/dt/esp/esp-idf/components/esp_wifi /home/dt/esp/esp-idf/components/espcoredump /home/dt/esp/esp-idf/components/esptool_py /home/dt/esp/esp-idf/components/fatfs /home/dt/esp/esp-idf/components/freertos /home/dt/esp/esp-idf/components/hal /home/dt/esp/esp-idf/components/heap /home/dt/esp/esp-idf/components/http_parser /home/dt/esp/esp-idf/components/idf_test /home/dt/esp/esp-idf/components/ieee802154 /home/dt/esp/esp-idf/components/json /home/dt/esp/esp-idf/components/log /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lv_examples /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_tft /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_touch /home/dt/esp/esp-idf/components/lwip /home/dt/esp/5_35_LVGL_Full_Test-S024/main /home/dt/esp/esp-idf/components/mbedtls /home/dt/esp/esp-idf/components/mqtt /home/dt/esp/esp-idf/components/newlib /home/dt/esp/esp-idf/components/nvs_flash /home/dt/esp/esp-idf/components/nvs_sec_provider /home/dt/esp/esp-idf/components/openthread /home/dt/esp/esp-idf/components/partition_table /home/dt/esp/esp-idf/components/perfmon /home/dt/esp/esp-idf/components/protobuf-c /home/dt/esp/esp-idf/examples/common_components/protocol_examples_common /home/dt/esp/esp-idf/components/protocomm /home/dt/esp/esp-idf/components/pthread /home/dt/esp/esp-idf/components/sdmmc /home/dt/esp/esp-idf/components/soc /home/dt/esp/esp-idf/components/spi_flash /home/dt/esp/esp-idf/components/spiffs /home/dt/esp/esp-idf/components/tcp_transport /home/dt/esp/esp-idf/components/ulp /home/dt/esp/esp-idf/components/unity /home/dt/esp/esp-idf/components/usb /home/dt/esp/esp-idf/components/vfs /home/dt/esp/esp-idf/components/wear_levelling /home/dt/esp/esp-idf/components/wifi_provisioning /home/dt/esp/esp-idf/components/wpa_supplicant /home/dt/esp/esp-idf/components/xtensa
+-- Configuring done (3.9s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/dt/esp/5_35_LVGL_Full_Test-S024/build
+[1/10] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,2500K,
+storage,data,fat,0x281000,1M,
+*******************************************************************************
+[2/10] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[3/10] No install step for 'bootloader'
+[4/10] Completed 'bootloader'
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/freertosTest.c.obj
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:11:1: warning: ignoring attribute 'section (".iram1.3")' because it conflicts with previous 'section (".iram1.0")' [-Wattributes]
+   11 | {
+      | ^
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:1:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:21:23: note: previous declaration here
+   21 | static bool IRAM_ATTR example_timer_on_alarm_cb_v1(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:26:1: warning: ignoring attribute 'section (".iram1.4")' because it conflicts with previous 'section (".iram1.1")' [-Wattributes]
+   26 | {
+      | ^
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:22:23: note: previous declaration here
+   22 | static bool IRAM_ATTR example_timer_on_alarm_cb_v2(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.c:39:1: warning: ignoring attribute 'section (".iram1.5")' because it conflicts with previous 'section (".iram1.2")' [-Wattributes]
+   39 | {
+      | ^
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:23:23: note: previous declaration here
+   23 | static bool IRAM_ATTR example_timer_on_alarm_cb_v3(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6/10] Linking C static library esp-idf/main/libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable lvgl-demo.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+[10/10] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dt/esp/5_35_LVGL_Full_Test-S024/build/partition_table/partition-table.bin /home/dt/esp/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+lvgl-demo.bin binary size 0x107520 bytes. Smallest app partition is 0x271000 bytes. 0x169ae0 bytes (58%) free.

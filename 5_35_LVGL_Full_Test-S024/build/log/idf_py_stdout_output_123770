@@ -1,0 +1,547 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-826-g8760e6d2a7-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  7 2024 11:36:23[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d440h (185408) map[0m
+[0;32mI (170) esp_image: segment 1: paddr=0003d468 vaddr=3ffb0000 size=02bb0h ( 11184) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=bd1a4h (774564) map[0m
+[0;32mI (441) esp_image: segment 3: paddr=000fd1cc vaddr=3ffb2bb0 size=014a0h (  5280) load[0m
+[0;32mI (443) esp_image: segment 4: paddr=000fe674 vaddr=40080000 size=18ee0h (102112) load[0m
+[0;32mI (499) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (499) boot: Disabling RNG early entropy source...[0m
+[0;32mI (512) cpu_start: Multicore app[0m
+[0;32mI (520) cpu_start: Pro cpu start user code[0m
+[0;32mI (520) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (520) app_init: Application information:[0m
+[0;32mI (523) app_init: Project name:     lvgl-demo[0m
+[0;32mI (528) app_init: App version:      1[0m
+[0;32mI (533) app_init: ELF file SHA256:  38492305196d5ac1...[0m
+[0;32mI (538) app_init: ESP-IDF:          v5.4-dev-826-g8760e6d2a7-dirty[0m
+[0;32mI (545) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (550) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (555) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (567) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFD4F08 len 0000B0F8 (44 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 40098EE0 len 00007120 (28 KiB): IRAM[0m
+[0;32mI (600) spi_flash: detected chip: generic[0m
+[0;32mI (603) spi_flash: flash io: dio[0m
+[0;32mI (608) main_task: Started on CPU0[0m
+[0;32mI (618) main_task: Calling app_main()[0m
+
+APP  LittlevGL Demo is start!~
+[0;32mI (1618) main_task: Returned from app_main()[0m
+lvgl_helpers->Display hor size: 320, ver size: 240
+lvgl_helpers->Display buffer size: 20480
+lvgl_helpers->Initializing SPI master for display
+lvgl_helpers->Configuring SPI host HSPI_HOST (1)
+lvgl_helpers->MISO pin: -1, MOSI pin: 13, SCLK pin: 14
+lvgl_helpers->Max transfer size: 40960 (bytes)
+lvgl_helpers->Initializing SPI bus...
+disp_spi->Adding SPI device
+disp_spi->Clock speed: 40000000Hz, mode: 0, CS pin: 15
+xjztestTask running--------
+[0;32mI (1678) timer: Create timer handle[0m
+[0;32mI (1678) timer: Enable timer[0m
+[0;32mI (1678) timer: Start timer, stop it at alarm event[0m
+ILI9341->ili9341 Initialization....
+[0;32mI (2098) ILI9341: Enabling backlight.[0m
+ILI9341->Display orientation: LANDSCAPE_INVERTED
+ILI9341->0x36 command value: 0xE8
+lvgl_helpers->Initializing SPI master for touch
+[0;32mI (2098) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2118) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2118) XPT2046: XPT2046 Initialization[0m
+I (2218) wifi:wifi driver task: 3ffdf674, prio:23, stack:6656, core=0
+I (2228) wifi:wifi firmware version: eb97ced
+I (2228) wifi:wifi certification version: v7.0
+I (2228) wifi:config NVS flash: enabled
+I (2228) wifi:config nano formating: disabled
+I (2238) wifi:Init data frame dynamic rx buffer num: 32
+I (2238) wifi:Init static rx mgmt buffer num: 5
+I (2238) wifi:Init management short buffer num: 32
+I (2248) wifi:Init dynamic tx buffer num: 32
+I (2248) wifi:Init static rx buffer size: 1600
+I (2258) wifi:Init static rx buffer num: 10
+I (2258) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2298) wifi_init: rx ba win: 6[0m
+[0;32mI (2298) wifi_init: accept mbox: 6[0m
+[0;32mI (2298) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2298) wifi_init: udp mbox: 6[0m
+[0;32mI (2298) wifi_init: tcp mbox: 6[0m
+[0;32mI (2298) wifi_init: tcp tx win: 5744[0m
+[0;32mI (2318) wifi_init: tcp rx win: 5744[0m
+[0;32mI (2318) wifi_init: tcp mss: 1440[0m
+[0;32mI (2318) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2318) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2358) timer: pdMS_TO_TICKS(2000) = 200[0m
+[0;32mI (2368) timer: Timer stopped, count=666668[0m
+[0;32mI (2368) timer: Set count value[0m
+[0;32mI (2378) timer: Get count value[0m
+[0;32mI (2378) timer: Timer count value=100[0m
+[0;32mI (2378) timer: Disable timer[0m
+[0;32mI (2378) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (2468) wifi:mode : sta (cc:7b:5c:1e:94:e8)
+I (2468) wifi:enable tsf
+[0;32mI (2468) timer: Enable timer[0m
+[0;32mI (2468) timer: Start timer, auto-reload at alarm event[0m
+[0;32mI (2468) wifi_sta: connect to AP:19-8-卧室 [0m
+[0;32mI (2468) wifi_sta: wifi_init_sta finished.[0m
+I (2488) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (2488) wifi:state: init -> auth (0xb0)
+[0;32mI (3488) timer: Timer reloaded, count=2[0m
+I (3488) wifi:state: auth -> init (0x200)
+I (3498) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+[0;32mI (4488) timer: Timer reloaded, count=2[0m
+[0;32mI (5488) timer: Timer reloaded, count=2[0m
+[0;32mI (6488) timer: Timer reloaded, count=2[0m
+[0;32mI (6488) timer: Stop timer[0m
+[0;32mI (6488) timer: Disable timer[0m
+[0;32mI (6488) timer: Enable timer[0m
+[0;32mI (6488) timer: Start timer, update alarm value dynamically[0m
+[0;32mI (7498) timer: Timer alarmed, count=1000002[0m
+[0;32mI (8498) timer: Timer alarmed, count=2000002[0m
+[0;32mI (9498) timer: Timer alarmed, count=3000002[0m
+[0;32mI (10498) timer: Timer alarmed, count=4000002[0m
+[0;32mI (10498) timer: Stop timer[0m
+[0;32mI (10498) timer: Disable timer[0m
+[0;32mI (10498) timer: Delete timer[0m
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+[0;32mI (1397738) XPT2046: XPT2046 Read 原始值：x:1563   y:1671[0m
+[0;32mI (1397738) XPT2046: XPT2046 Read 坐标值：x:130   y:96[0m
+[0;32mI (1397778) XPT2046: XPT2046 Read 原始值：x:1582   y:1695[0m
+[0;32mI (1397778) XPT2046: XPT2046 Read 坐标值：x:132   y:98[0m
+[0;32mI (1397818) XPT2046: XPT2046 Read 原始值：x:1519   y:1775[0m
+[0;32mI (1397818) XPT2046: XPT2046 Read 坐标值：x:126   y:103[0m
+[0;32mI (1397858) XPT2046: XPT2046 Read 原始值：x:1538   y:1801[0m
+[0;32mI (1397858) XPT2046: XPT2046 Read 坐标值：x:128   y:105[0m
+[0;32mI (1397898) XPT2046: XPT2046 Read 原始值：x:1541   y:1782[0m
+[0;32mI (1397898) XPT2046: XPT2046 Read 坐标值：x:128   y:103[0m
+[0;32mI (1397938) XPT2046: XPT2046 Read 原始值：x:1537   y:1776[0m
+[0;32mI (1397938) XPT2046: XPT2046 Read 坐标值：x:127   y:103[0m
+[0;32mI (1397978) XPT2046: XPT2046 Read 原始值：x:1553   y:1757[0m
+[0;32mI (1397978) XPT2046: XPT2046 Read 坐标值：x:129   y:102[0m
+[0;32mI (1398018) XPT2046: XPT2046 Read 原始值：x:1565   y:1774[0m
+[0;32mI (1398018) XPT2046: XPT2046 Read 坐标值：x:130   y:103[0m
+[0;32mI (1398058) XPT2046: XPT2046 Read 原始值：x:1561   y:1787[0m
+[0;32mI (1398058) XPT2046: XPT2046 Read 坐标值：x:130   y:104[0m
+[0;32mI (1398098) XPT2046: XPT2046 Read 原始值：x:1617   y:1796[0m
+[0;32mI (1398098) XPT2046: XPT2046 Read 坐标值：x:135   y:104[0m
+[0;32mI (1398138) XPT2046: XPT2046 Read 原始值：x:1655   y:1525[0m
+[0;32mI (1398138) XPT2046: XPT2046 Read 坐标值：x:138   y:87[0m
+[0;32mI (1398178) XPT2046: XPT2046 Read 原始值：x:1707   y:1427[0m
+[0;32mI (1398178) XPT2046: XPT2046 Read 坐标值：x:143   y:80[0m
+[0;32mI (1398218) XPT2046: XPT2046 Read 原始值：x:1759   y:1372[0m
+[0;32mI (1398218) XPT2046: XPT2046 Read 坐标值：x:148   y:77[0m
+[0;32mI (1398258) XPT2046: XPT2046 Read 原始值：x:1771   y:1357[0m
+[0;32mI (1398258) XPT2046: XPT2046 Read 坐标值：x:149   y:76[0m
+[0;32mI (1398298) XPT2046: XPT2046 Read 原始值：x:1678   y:1672[0m
+[0;32mI (1398298) XPT2046: XPT2046 Read 坐标值：x:140   y:96[0m
+[0;32mI (1398338) XPT2046: XPT2046 Read 原始值：x:1667   y:1689[0m
+[0;32mI (1398338) XPT2046: XPT2046 Read 坐标值：x:139   y:97[0m
+[0;32mI (1398658) XPT2046: XPT2046 Read 原始值：x:1651   y:1792[0m
+[0;32mI (1398658) XPT2046: XPT2046 Read 坐标值：x:138   y:104[0m
+[0;32mI (1398698) XPT2046: XPT2046 Read 原始值：x:1662   y:1716[0m
+[0;32mI (1398698) XPT2046: XPT2046 Read 坐标值：x:139   y:99[0m
+[0;32mI (1398728) XPT2046: XPT2046 Read 原始值：x:1665   y:1641[0m
+[0;32mI (1398728) XPT2046: XPT2046 Read 坐标值：x:139   y:94[0m
+[0;32mI (1398768) XPT2046: XPT2046 Read 原始值：x:1705   y:1637[0m
+[0;32mI (1398768) XPT2046: XPT2046 Read 坐标值：x:143   y:94[0m
+[0;32mI (1398808) XPT2046: XPT2046 Read 原始值：x:1855   y:1692[0m
+[0;32mI (1398808) XPT2046: XPT2046 Read 坐标值：x:156   y:97[0m
+[0;32mI (1398848) XPT2046: XPT2046 Read 原始值：x:1937   y:1629[0m
+[0;32mI (1398848) XPT2046: XPT2046 Read 坐标值：x:164   y:93[0m
+[0;32mI (1398888) XPT2046: XPT2046 Read 原始值：x:1965   y:1595[0m
+[0;32mI (1398888) XPT2046: XPT2046 Read 坐标值：x:166   y:91[0m
+[0;32mI (1398928) XPT2046: XPT2046 Read 原始值：x:1979   y:1580[0m
+[0;32mI (1398928) XPT2046: XPT2046 Read 坐标值：x:168   y:90[0m
+[0;32mI (1398968) XPT2046: XPT2046 Read 原始值：x:1980   y:1570[0m
+[0;32mI (1398968) XPT2046: XPT2046 Read 坐标值：x:168   y:90[0m
+[0;32mI (1399008) XPT2046: XPT2046 Read 原始值：x:2003   y:1566[0m
+[0;32mI (1399008) XPT2046: XPT2046 Read 坐标值：x:170   y:89[0m
+[0;32mI (1399048) XPT2046: XPT2046 Read 原始值：x:2025   y:1570[0m
+[0;32mI (1399048) XPT2046: XPT2046 Read 坐标值：x:172   y:90[0m
+[0;32mI (1399088) XPT2046: XPT2046 Read 原始值：x:2038   y:1568[0m
+[0;32mI (1399088) XPT2046: XPT2046 Read 坐标值：x:173   y:89[0m
+[0;32mI (1399128) XPT2046: XPT2046 Read 原始值：x:2056   y:1564[0m
+[0;32mI (1399128) XPT2046: XPT2046 Read 坐标值：x:175   y:89[0m
+[0;32mI (1399168) XPT2046: XPT2046 Read 原始值：x:2067   y:1548[0m
+[0;32mI (1399168) XPT2046: XPT2046 Read 坐标值：x:176   y:88[0m
+[0;32mI (1399208) XPT2046: XPT2046 Read 原始值：x:2070   y:1544[0m
+[0;32mI (1399208) XPT2046: XPT2046 Read 坐标值：x:176   y:88[0m
+[0;32mI (1399248) XPT2046: XPT2046 Read 原始值：x:2070   y:1547[0m
+[0;32mI (1399248) XPT2046: XPT2046 Read 坐标值：x:176   y:88[0m
+[0;32mI (1399288) XPT2046: XPT2046 Read 原始值：x:2066   y:1563[0m
+[0;32mI (1399288) XPT2046: XPT2046 Read 坐标值：x:176   y:89[0m
+[0;32mI (1399328) XPT2046: XPT2046 Read 原始值：x:2066   y:1577[0m
+[0;32mI (1399328) XPT2046: XPT2046 Read 坐标值：x:176   y:90[0m
+[0;32mI (1399368) XPT2046: XPT2046 Read 原始值：x:2068   y:1582[0m
+[0;32mI (1399368) XPT2046: XPT2046 Read 坐标值：x:176   y:90[0m
+[0;32mI (1399408) XPT2046: XPT2046 Read 原始值：x:2070   y:1588[0m
+[0;32mI (1399408) XPT2046: XPT2046 Read 坐标值：x:176   y:91[0m
+[0;32mI (1399448) XPT2046: XPT2046 Read 原始值：x:2072   y:1594[0m
+[0;32mI (1399448) XPT2046: XPT2046 Read 坐标值：x:176   y:91[0m
+[0;32mI (1399488) XPT2046: XPT2046 Read 原始值：x:2067   y:1618[0m
+[0;32mI (1399488) XPT2046: XPT2046 Read 坐标值：x:176   y:93[0m
+[0;32mI (1399528) XPT2046: XPT2046 Read 原始值：x:2054   y:1641[0m
+[0;32mI (1399528) XPT2046: XPT2046 Read 坐标值：x:174   y:94[0m
+[0;32mI (1399568) XPT2046: XPT2046 Read 原始值：x:2030   y:1669[0m
+[0;32mI (1399568) XPT2046: XPT2046 Read 坐标值：x:172   y:96[0m
+[0;32mI (1399608) XPT2046: XPT2046 Read 原始值：x:2023   y:1689[0m
+[0;32mI (1399608) XPT2046: XPT2046 Read 坐标值：x:172   y:97[0m
+[0;32mI (1399648) XPT2046: XPT2046 Read 原始值：x:2013   y:1708[0m
+[0;32mI (1399648) XPT2046: XPT2046 Read 坐标值：x:171   y:99[0m
+[0;32mI (1399688) XPT2046: XPT2046 Read 原始值：x:2005   y:1737[0m
+[0;32mI (1399688) XPT2046: XPT2046 Read 坐标值：x:170   y:100[0m
+[0;32mI (1399728) XPT2046: XPT2046 Read 原始值：x:1994   y:1755[0m
+[0;32mI (1399728) XPT2046: XPT2046 Read 坐标值：x:169   y:102[0m
+[0;32mI (1399768) XPT2046: XPT2046 Read 原始值：x:1978   y:1777[0m
+[0;32mI (1399768) XPT2046: XPT2046 Read 坐标值：x:168   y:103[0m
+[0;32mI (1399808) XPT2046: XPT2046 Read 原始值：x:1842   y:1967[0m
+[0;32mI (1399808) XPT2046: XPT2046 Read 坐标值：x:155   y:115[0m
+[0;32mI (1399848) XPT2046: XPT2046 Read 原始值：x:1767   y:2037[0m
+[0;32mI (1399848) XPT2046: XPT2046 Read 坐标值：x:148   y:120[0m
+[0;32mI (1399888) XPT2046: XPT2046 Read 原始值：x:1640   y:2039[0m
+[0;32mI (1399888) XPT2046: XPT2046 Read 坐标值：x:137   y:120[0m
+[0;32mI (1399928) XPT2046: XPT2046 Read Error[0m
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--------
+freertosTestFun running--

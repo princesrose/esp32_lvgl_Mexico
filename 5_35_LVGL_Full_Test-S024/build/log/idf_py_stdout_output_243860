@@ -1,0 +1,7 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: 不是 git 仓库（或者任何父目录）：.git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/opt/cmake-3.28.3-linux-x86_64/bin/cmake --regenerate-during-build -S/home/dt/esp/5_35_LVGL_Full_Test-S024 -B/home/dt/esp/5_35_LVGL_Full_Test-S024/build

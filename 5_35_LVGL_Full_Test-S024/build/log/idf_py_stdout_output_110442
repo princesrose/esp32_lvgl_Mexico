@@ -1,0 +1,770 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: 不是 git 仓库（或者任何父目录）：.git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/dt/esp/5_35_LVGL_Full_Test-S024/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "lvgl-demo" version: 1
+-- Adding linker script /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/dt/esp/5_35_LVGL_Full_Test-S024/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/dt/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lv_examples lvgl lvgl_esp32_drivers lvgl_tft lvgl_touch lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocol_examples_common protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/dt/esp/esp-idf/components/app_trace /home/dt/esp/esp-idf/components/app_update /home/dt/esp/esp-idf/components/bootloader /home/dt/esp/esp-idf/components/bootloader_support /home/dt/esp/esp-idf/components/bt /home/dt/esp/esp-idf/components/cmock /home/dt/esp/esp-idf/components/console /home/dt/esp/esp-idf/components/cxx /home/dt/esp/esp-idf/components/driver /home/dt/esp/esp-idf/components/efuse /home/dt/esp/esp-idf/components/esp-tls /home/dt/esp/esp-idf/components/esp_adc /home/dt/esp/esp-idf/components/esp_app_format /home/dt/esp/esp-idf/components/esp_bootloader_format /home/dt/esp/esp-idf/components/esp_coex /home/dt/esp/esp-idf/components/esp_common /home/dt/esp/esp-idf/components/esp_driver_ana_cmpr /home/dt/esp/esp-idf/components/esp_driver_cam /home/dt/esp/esp-idf/components/esp_driver_dac /home/dt/esp/esp-idf/components/esp_driver_gpio /home/dt/esp/esp-idf/components/esp_driver_gptimer /home/dt/esp/esp-idf/components/esp_driver_i2c /home/dt/esp/esp-idf/components/esp_driver_i2s /home/dt/esp/esp-idf/components/esp_driver_isp /home/dt/esp/esp-idf/components/esp_driver_jpeg /home/dt/esp/esp-idf/components/esp_driver_ledc /home/dt/esp/esp-idf/components/esp_driver_mcpwm /home/dt/esp/esp-idf/components/esp_driver_parlio /home/dt/esp/esp-idf/components/esp_driver_pcnt /home/dt/esp/esp-idf/components/esp_driver_ppa /home/dt/esp/esp-idf/components/esp_driver_rmt /home/dt/esp/esp-idf/components/esp_driver_sdio /home/dt/esp/esp-idf/components/esp_driver_sdm /home/dt/esp/esp-idf/components/esp_driver_sdmmc /home/dt/esp/esp-idf/components/esp_driver_sdspi /home/dt/esp/esp-idf/components/esp_driver_spi /home/dt/esp/esp-idf/components/esp_driver_tsens /home/dt/esp/esp-idf/components/esp_driver_uart /home/dt/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/dt/esp/esp-idf/components/esp_eth /home/dt/esp/esp-idf/components/esp_event /home/dt/esp/esp-idf/components/esp_gdbstub /home/dt/esp/esp-idf/components/esp_hid /home/dt/esp/esp-idf/components/esp_http_client /home/dt/esp/esp-idf/components/esp_http_server /home/dt/esp/esp-idf/components/esp_https_ota /home/dt/esp/esp-idf/components/esp_https_server /home/dt/esp/esp-idf/components/esp_hw_support /home/dt/esp/esp-idf/components/esp_lcd /home/dt/esp/esp-idf/components/esp_local_ctrl /home/dt/esp/esp-idf/components/esp_mm /home/dt/esp/esp-idf/components/esp_netif /home/dt/esp/esp-idf/components/esp_netif_stack /home/dt/esp/esp-idf/components/esp_partition /home/dt/esp/esp-idf/components/esp_phy /home/dt/esp/esp-idf/components/esp_pm /home/dt/esp/esp-idf/components/esp_psram /home/dt/esp/esp-idf/components/esp_ringbuf /home/dt/esp/esp-idf/components/esp_rom /home/dt/esp/esp-idf/components/esp_system /home/dt/esp/esp-idf/components/esp_timer /home/dt/esp/esp-idf/components/esp_vfs_console /home/dt/esp/esp-idf/components/esp_wifi /home/dt/esp/esp-idf/components/espcoredump /home/dt/esp/esp-idf/components/esptool_py /home/dt/esp/esp-idf/components/fatfs /home/dt/esp/esp-idf/components/freertos /home/dt/esp/esp-idf/components/hal /home/dt/esp/esp-idf/components/heap /home/dt/esp/esp-idf/components/http_parser /home/dt/esp/esp-idf/components/idf_test /home/dt/esp/esp-idf/components/ieee802154 /home/dt/esp/esp-idf/components/json /home/dt/esp/esp-idf/components/log /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lv_examples /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_tft /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_touch /home/dt/esp/esp-idf/components/lwip /home/dt/esp/5_35_LVGL_Full_Test-S024/main /home/dt/esp/esp-idf/components/mbedtls /home/dt/esp/esp-idf/components/mqtt /home/dt/esp/esp-idf/components/newlib /home/dt/esp/esp-idf/components/nvs_flash /home/dt/esp/esp-idf/components/nvs_sec_provider /home/dt/esp/esp-idf/components/openthread /home/dt/esp/esp-idf/components/partition_table /home/dt/esp/esp-idf/components/perfmon /home/dt/esp/esp-idf/components/protobuf-c /home/dt/esp/esp-idf/examples/common_components/protocol_examples_common /home/dt/esp/esp-idf/components/protocomm /home/dt/esp/esp-idf/components/pthread /home/dt/esp/esp-idf/components/sdmmc /home/dt/esp/esp-idf/components/soc /home/dt/esp/esp-idf/components/spi_flash /home/dt/esp/esp-idf/components/spiffs /home/dt/esp/esp-idf/components/tcp_transport /home/dt/esp/esp-idf/components/ulp /home/dt/esp/esp-idf/components/unity /home/dt/esp/esp-idf/components/usb /home/dt/esp/esp-idf/components/vfs /home/dt/esp/esp-idf/components/wear_levelling /home/dt/esp/esp-idf/components/wifi_provisioning /home/dt/esp/esp-idf/components/wpa_supplicant /home/dt/esp/esp-idf/components/xtensa
+-- Configuring done (3.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /home/dt/esp/5_35_LVGL_Full_Test-S024/build
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/setup_scr_WidgetsDemo.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/setup_scr_WidgetsDemo.c.obj 
+/home/dt/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.4-dev-826-g8760e6d2a7-dirty\" -DLV_CONF_INCLUDE_SIMPLE=1 -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/dt/esp/5_35_LVGL_Full_Test-S024/build/config -I/home/dt/esp/5_35_LVGL_Full_Test-S024/main -I/home/dt/esp/esp-idf/components/newlib/platform_include -I/home/dt/esp/esp-idf/components/freertos/config/include -I/home/dt/esp/esp-idf/components/freertos/config/include/freertos -I/home/dt/esp/esp-idf/components/freertos/config/xtensa/include -I/home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/dt/esp/esp-idf/components/freertos/esp_additions/include -I/home/dt/esp/esp-idf/components/esp_hw_support/include -I/home/dt/esp/esp-idf/components/esp_hw_support/include/soc -I/home/dt/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/dt/esp/esp-idf/components/esp_hw_support/dma/include -I/home/dt/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/dt/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/dt/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/dt/esp/esp-idf/components/heap/include -I/home/dt/esp/esp-idf/components/log/include -I/home/dt/esp/esp-idf/components/soc/include -I/home/dt/esp/esp-idf/components/soc/esp32 -I/home/dt/esp/esp-idf/components/soc/esp32/include -I/home/dt/esp/esp-idf/components/hal/platform_port/include -I/home/dt/esp/esp-idf/components/hal/esp32/include -I/home/dt/esp/esp-idf/components/hal/include -I/home/dt/esp/esp-idf/components/esp_rom/include -I/home/dt/esp/esp-idf/components/esp_rom/include/esp32 -I/home/dt/esp/esp-idf/components/esp_rom/esp32 -I/home/dt/esp/esp-idf/components/esp_common/include -I/home/dt/esp/esp-idf/components/esp_system/include -I/home/dt/esp/esp-idf/components/esp_system/port/soc -I/home/dt/esp/esp-idf/components/esp_system/port/include/private -I/home/dt/esp/esp-idf/components/xtensa/esp32/include -I/home/dt/esp/esp-idf/components/xtensa/include -I/home/dt/esp/esp-idf/components/xtensa/deprecated_include -I/home/dt/esp/esp-idf/components/lwip/include -I/home/dt/esp/esp-idf/components/lwip/include/apps -I/home/dt/esp/esp-idf/components/lwip/include/apps/sntp -I/home/dt/esp/esp-idf/components/lwip/lwip/src/include -I/home/dt/esp/esp-idf/components/lwip/port/include -I/home/dt/esp/esp-idf/components/lwip/port/freertos/include -I/home/dt/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/dt/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/dt/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl -I/home/dt/esp/esp-idf/components/esp_driver_spi/include -I/home/dt/esp/esp-idf/components/esp_pm/include -I/home/dt/esp/esp-idf/components/esp_driver_gpio/include -I/home/dt/esp/esp-idf/components/esp_event/include -I/home/dt/esp/esp-idf/components/esp_timer/include -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_touch -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl_esp32_drivers/lvgl_tft -I/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lv_examples -I/home/dt/esp/esp-idf/components/esp_http_client/include -I/home/dt/esp/esp-idf/components/json/cJSON -I/home/dt/esp/esp-idf/components/esp_wifi/include -I/home/dt/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/dt/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/dt/esp/esp-idf/components/esp_wifi/include/local -I/home/dt/esp/esp-idf/components/esp_phy/include -I/home/dt/esp/esp-idf/components/esp_phy/esp32/include -I/home/dt/esp/esp-idf/components/esp_netif/include -I/home/dt/esp/esp-idf/components/nvs_flash/include -I/home/dt/esp/esp-idf/components/spi_flash/include -I/home/dt/esp/esp-idf/components/esp_partition/include -I/home/dt/esp/esp-idf/examples/common_components/protocol_examples_common/include -I/home/dt/esp/esp-idf/components/esp-tls -I/home/dt/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/dt/esp/esp-idf/components/mbedtls/port/include -I/home/dt/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/dt/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/dt/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/dt/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/dt/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/dt/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/dt/esp/esp-idf/components/esp_driver_gptimer/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/dt/esp/5_35_LVGL_Full_Test-S024=. -fmacro-prefix-map=/home/dt/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/setup_scr_WidgetsDemo.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/setup_scr_WidgetsDemo.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/setup_scr_WidgetsDemo.c.obj -c /home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c: In function 'setup_scr_WidgetsDemo':
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:14:27: error: too few arguments to function 'lv_obj_create'
+   14 |         ui->WidgetsDemo = lv_obj_create(NULL);
+      |                           ^~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/lvgl.h:24,
+                 from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.h:7,
+                 from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:9:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:305:12: note: declared here
+  305 | lv_obj_t * lv_obj_create(lv_obj_t * parent, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:15:32: error: too few arguments to function 'lv_keyboard_create'
+   15 |         ui->g_kb_WidgetsDemo = lv_keyboard_create(ui->WidgetsDemo);
+      |                                ^~~~~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/lvgl.h:53:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_keyboard.h:75:12: note: declared here
+   75 | lv_obj_t * lv_keyboard_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:16:9: error: implicit declaration of function 'lv_obj_add_event_cb'; did you mean 'lv_obj_get_event_cb'? [-Werror=implicit-function-declaration]
+   16 |         lv_obj_add_event_cb(ui->g_kb_WidgetsDemo, kb_event_cb, LV_EVENT_ALL, NULL);
+      |         ^~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_event_cb
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:16:51: error: 'kb_event_cb' undeclared (first use in this function); did you mean 'lv_event_cb_t'?
+   16 |         lv_obj_add_event_cb(ui->g_kb_WidgetsDemo, kb_event_cb, LV_EVENT_ALL, NULL);
+      |                                                   ^~~~~~~~~~~
+      |                                                   lv_event_cb_t
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:16:51: note: each undeclared identifier is reported only once for each function it appears in
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:16:64: error: 'LV_EVENT_ALL' undeclared (first use in this function); did you mean 'LV_EVENT_APPLY'?
+   16 |         lv_obj_add_event_cb(ui->g_kb_WidgetsDemo, kb_event_cb, LV_EVENT_ALL, NULL);
+      |                                                                ^~~~~~~~~~~~
+      |                                                                LV_EVENT_APPLY
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:17:9: error: implicit declaration of function 'lv_obj_add_flag'; did you mean 'lv_obj_add_state'? [-Werror=implicit-function-declaration]
+   17 |         lv_obj_add_flag(ui->g_kb_WidgetsDemo, LV_OBJ_FLAG_HIDDEN);
+      |         ^~~~~~~~~~~~~~~
+      |         lv_obj_add_state
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:17:47: error: 'LV_OBJ_FLAG_HIDDEN' undeclared (first use in this function)
+   17 |         lv_obj_add_flag(ui->g_kb_WidgetsDemo, LV_OBJ_FLAG_HIDDEN);
+      |                                               ^~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:18:9: error: implicit declaration of function 'lv_obj_set_style_text_font'; did you mean 'lv_obj_get_style_text_font'? [-Werror=implicit-function-declaration]
+   18 |         lv_obj_set_style_text_font(ui->g_kb_WidgetsDemo, &lv_font_SourceHanSerifSC_Regular_18, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_font
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:18:59: error: 'lv_font_SourceHanSerifSC_Regular_18' undeclared (first use in this function)
+   18 |         lv_obj_set_style_text_font(ui->g_kb_WidgetsDemo, &lv_font_SourceHanSerifSC_Regular_18, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:18:96: error: 'LV_PART_MAIN' undeclared (first use in this function); did you mean 'LV_LED_PART_MAIN'?
+   18 |         lv_obj_set_style_text_font(ui->g_kb_WidgetsDemo, &lv_font_SourceHanSerifSC_Regular_18, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                                                ^~~~~~~~~~~~
+      |                                                                                                LV_LED_PART_MAIN
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:20:9: error: implicit declaration of function 'lv_obj_set_scrollbar_mode'; did you mean 'lv_win_set_scrollbar_mode'? [-Werror=implicit-function-declaration]
+   20 |         lv_obj_set_scrollbar_mode(ui->WidgetsDemo, LV_SCROLLBAR_MODE_OFF);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_win_set_scrollbar_mode
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:23:9: error: implicit declaration of function 'lv_obj_set_style_bg_opa'; did you mean 'lv_obj_get_style_bg_opa'? [-Werror=implicit-function-declaration]
+   23 |         lv_obj_set_style_bg_opa(ui->WidgetsDemo, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_bg_opa
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:24:9: error: implicit declaration of function 'lv_obj_set_style_bg_color'; did you mean 'lv_obj_get_style_bg_color'? [-Werror=implicit-function-declaration]
+   24 |         lv_obj_set_style_bg_color(ui->WidgetsDemo, lv_color_hex(0xeaeff3), LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_bg_color
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:25:9: error: implicit declaration of function 'lv_obj_set_style_bg_grad_dir'; did you mean 'lv_obj_get_style_bg_grad_dir'? [-Werror=implicit-function-declaration]
+   25 |         lv_obj_set_style_bg_grad_dir(ui->WidgetsDemo, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_bg_grad_dir
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:28:75: error: 'LV_DIR_TOP' undeclared (first use in this function)
+   28 |         ui->WidgetsDemo_tabview_Main = lv_tabview_create(ui->WidgetsDemo, LV_DIR_TOP, 45);
+      |                                                                           ^~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:28:40: error: too many arguments to function 'lv_tabview_create'
+   28 |         ui->WidgetsDemo_tabview_Main = lv_tabview_create(ui->WidgetsDemo, LV_DIR_TOP, 45);
+      |                                        ^~~~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/lvgl.h:59:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_tabview.h:90:12: note: declared here
+   90 | lv_obj_t * lv_tabview_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:37:9: error: implicit declaration of function 'lv_obj_set_style_text_color'; did you mean 'lv_obj_get_style_text_color'? [-Werror=implicit-function-declaration]
+   37 |         lv_obj_set_style_text_color(ui->WidgetsDemo_tabview_Main, lv_color_hex(0x4d4d4d), LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_color
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:38:67: error: 'lv_font_montserratMedium_12' undeclared (first use in this function); did you mean 'lv_font_montserrat_12'?
+   38 |         lv_obj_set_style_text_font(ui->WidgetsDemo_tabview_Main, &lv_font_montserratMedium_12, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                   lv_font_montserrat_12
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:39:9: error: implicit declaration of function 'lv_obj_set_style_text_opa'; did you mean 'lv_obj_get_style_text_opa'? [-Werror=implicit-function-declaration]
+   39 |         lv_obj_set_style_text_opa(ui->WidgetsDemo_tabview_Main, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_opa
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:40:9: error: implicit declaration of function 'lv_obj_set_style_text_letter_space'; did you mean 'lv_obj_get_style_text_letter_space'? [-Werror=implicit-function-declaration]
+   40 |         lv_obj_set_style_text_letter_space(ui->WidgetsDemo_tabview_Main, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_letter_space
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:41:9: error: implicit declaration of function 'lv_obj_set_style_text_line_space'; did you mean 'lv_obj_get_style_text_line_space'? [-Werror=implicit-function-declaration]
+   41 |         lv_obj_set_style_text_line_space(ui->WidgetsDemo_tabview_Main, 16, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_line_space
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:42:9: error: implicit declaration of function 'lv_obj_set_style_border_width'; did you mean 'lv_obj_get_style_border_width'? [-Werror=implicit-function-declaration]
+   42 |         lv_obj_set_style_border_width(ui->WidgetsDemo_tabview_Main, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_border_width
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:43:9: error: implicit declaration of function 'lv_obj_set_style_radius'; did you mean 'lv_obj_get_style_radius'? [-Werror=implicit-function-declaration]
+   43 |         lv_obj_set_style_radius(ui->WidgetsDemo_tabview_Main, 5, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_radius
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:44:9: error: implicit declaration of function 'lv_obj_set_style_shadow_width'; did you mean 'lv_obj_get_style_shadow_width'? [-Werror=implicit-function-declaration]
+   44 |         lv_obj_set_style_shadow_width(ui->WidgetsDemo_tabview_Main, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_shadow_width
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:48:9: error: implicit declaration of function 'ui_init_style' [-Werror=implicit-function-declaration]
+   48 |         ui_init_style(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default);
+      |         ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:50:9: error: too few arguments to function 'lv_style_set_bg_opa'
+   50 |         lv_style_set_bg_opa(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, 255);
+      |         ^~~~~~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:1128:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:125:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  125 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_OPA, bg_opa, lv_opa_t, _opa, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:51:88: error: incompatible type for argument 2 of 'lv_style_set_bg_color'
+   51 |         lv_style_set_bg_color(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, lv_color_hex(0xffffff));
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                        |
+      |                                                                                        lv_color_t {aka lv_color16_t}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:81: note: expected 'lv_state_t' {aka 'unsigned char'} but argument is of type 'lv_color_t' {aka 'lv_color16_t'}
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                                                                      ~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:123:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  123 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_COLOR, bg_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:51:9: error: too few arguments to function 'lv_style_set_bg_color'
+   51 |         lv_style_set_bg_color(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, lv_color_hex(0xffffff));
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:24: note: declared here
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:123:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  123 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_COLOR, bg_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:52:9: error: too few arguments to function 'lv_style_set_bg_grad_dir'
+   52 |         lv_style_set_bg_grad_dir(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, LV_GRAD_DIR_NONE);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:122:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  122 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_GRAD_DIR, bg_grad_dir, lv_grad_dir_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:53:9: error: too few arguments to function 'lv_style_set_border_width'
+   53 |         lv_style_set_border_width(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, 0);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:126:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  126 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_WIDTH, border_width, lv_style_int_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:54:9: error: too few arguments to function 'lv_style_set_radius'
+   54 |         lv_style_set_radius(&style_WidgetsDemo_tabview_Main_extra_btnm_main_default, 0);
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:102:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  102 | _LV_OBJ_STYLE_SET_GET_DECLARE(RADIUS, radius, lv_style_int_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:55:26: error: implicit declaration of function 'lv_tabview_get_tab_btns'; did you mean 'lv_tabview_get_tab_count'? [-Werror=implicit-function-declaration]
+   55 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_main_default, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                          lv_tabview_get_tab_count
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:55:26: warning: passing argument 1 of 'lv_obj_add_style' makes pointer from integer without a cast [-Wint-conversion]
+   55 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_main_default, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          int
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:34: note: expected 'lv_obj_t *' {aka 'struct _lv_obj_t *'} but argument is of type 'int'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                       ~~~~~~~~~~~^~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:55:81: warning: passing argument 2 of 'lv_obj_add_style' makes integer from pointer without a cast [-Wint-conversion]
+   55 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_main_default, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 lv_style_t *
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:47: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'lv_style_t *'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                                       ~~~~~~~~^~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:61:91: error: incompatible type for argument 2 of 'lv_style_set_text_color'
+   61 |         lv_style_set_text_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_default, lv_color_hex(0x4d4d4d));
+      |                                                                                           ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                           |
+      |                                                                                           lv_color_t {aka lv_color16_t}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:81: note: expected 'lv_state_t' {aka 'unsigned char'} but argument is of type 'lv_color_t' {aka 'lv_color16_t'}
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                                                                      ~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:164:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  164 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_COLOR, text_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:61:9: error: too few arguments to function 'lv_style_set_text_color'
+   61 |         lv_style_set_text_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_default, lv_color_hex(0x4d4d4d));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:24: note: declared here
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:164:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  164 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_COLOR, text_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:62:91: error: 'lv_font_montserratMedium_20' undeclared (first use in this function); did you mean 'lv_font_montserrat_12'?
+   62 |         lv_style_set_text_font(&style_WidgetsDemo_tabview_Main_extra_btnm_items_default, &lv_font_montserratMedium_20);
+      |                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                           lv_font_montserrat_12
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:62:9: error: too few arguments to function 'lv_style_set_text_font'
+   62 |         lv_style_set_text_font(&style_WidgetsDemo_tabview_Main_extra_btnm_items_default, &lv_font_montserratMedium_20);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:167:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  167 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_FONT, text_font, const lv_font_t *, _ptr, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:63:9: error: too few arguments to function 'lv_style_set_text_opa'
+   63 |         lv_style_set_text_opa(&style_WidgetsDemo_tabview_Main_extra_btnm_items_default, 255);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:166:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  166 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_OPA, text_opa, lv_opa_t, _opa, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:64:139: error: 'LV_PART_ITEMS' undeclared (first use in this function)
+   64 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_items_default, LV_PART_ITEMS|LV_STATE_DEFAULT);
+      |                                                                                                                                           ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:64:26: warning: passing argument 1 of 'lv_obj_add_style' makes pointer from integer without a cast [-Wint-conversion]
+   64 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_items_default, LV_PART_ITEMS|LV_STATE_DEFAULT);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          int
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:34: note: expected 'lv_obj_t *' {aka 'struct _lv_obj_t *'} but argument is of type 'int'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                       ~~~~~~~~~~~^~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:64:81: warning: passing argument 2 of 'lv_obj_add_style' makes integer from pointer without a cast [-Wint-conversion]
+   64 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_items_default, LV_PART_ITEMS|LV_STATE_DEFAULT);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 lv_style_t *
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:47: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'lv_style_t *'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                                       ~~~~~~~~^~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:70:91: error: incompatible type for argument 2 of 'lv_style_set_text_color'
+   70 |         lv_style_set_text_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |                                                                                           ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                           |
+      |                                                                                           lv_color_t {aka lv_color16_t}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:81: note: expected 'lv_state_t' {aka 'unsigned char'} but argument is of type 'lv_color_t' {aka 'lv_color16_t'}
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                                                                      ~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:164:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  164 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_COLOR, text_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:70:9: error: too few arguments to function 'lv_style_set_text_color'
+   70 |         lv_style_set_text_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:24: note: declared here
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:164:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  164 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_COLOR, text_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:71:9: error: too few arguments to function 'lv_style_set_text_font'
+   71 |         lv_style_set_text_font(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, &lv_font_montserratMedium_20);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:167:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  167 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_FONT, text_font, const lv_font_t *, _ptr, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:72:9: error: too few arguments to function 'lv_style_set_text_opa'
+   72 |         lv_style_set_text_opa(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, 255);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:166:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  166 | _LV_OBJ_STYLE_SET_GET_DECLARE(TEXT_OPA, text_opa, lv_opa_t, _opa, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:73:9: error: too few arguments to function 'lv_style_set_border_width'
+   73 |         lv_style_set_border_width(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, 4);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:126:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  126 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_WIDTH, border_width, lv_style_int_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:74:9: error: too few arguments to function 'lv_style_set_border_opa'
+   74 |         lv_style_set_border_opa(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, 255);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:131:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  131 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_OPA, border_opa, lv_opa_t, _opa, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:75:93: error: incompatible type for argument 2 of 'lv_style_set_border_color'
+   75 |         lv_style_set_border_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |                                                                                             ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                             |
+      |                                                                                             lv_color_t {aka lv_color16_t}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:81: note: expected 'lv_state_t' {aka 'unsigned char'} but argument is of type 'lv_color_t' {aka 'lv_color16_t'}
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                                                                      ~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:130:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  130 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_COLOR, border_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:75:9: error: too few arguments to function 'lv_style_set_border_color'
+   75 |         lv_style_set_border_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:24: note: declared here
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:130:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  130 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_COLOR, border_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:76:9: error: too few arguments to function 'lv_style_set_border_side'
+   76 |         lv_style_set_border_side(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, LV_BORDER_SIDE_BOTTOM);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:127:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  127 | _LV_OBJ_STYLE_SET_GET_DECLARE(BORDER_SIDE, border_side, lv_border_side_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:77:9: error: too few arguments to function 'lv_style_set_radius'
+   77 |         lv_style_set_radius(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, 0);
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:102:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  102 | _LV_OBJ_STYLE_SET_GET_DECLARE(RADIUS, radius, lv_style_int_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:78:9: error: too few arguments to function 'lv_style_set_bg_opa'
+   78 |         lv_style_set_bg_opa(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, 60);
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:125:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  125 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_OPA, bg_opa, lv_opa_t, _opa, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:79:89: error: incompatible type for argument 2 of 'lv_style_set_bg_color'
+   79 |         lv_style_set_bg_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                         |
+      |                                                                                         lv_color_t {aka lv_color16_t}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:81: note: expected 'lv_state_t' {aka 'unsigned char'} but argument is of type 'lv_color_t' {aka 'lv_color16_t'}
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                                                                      ~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:123:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  123 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_COLOR, bg_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:79:9: error: too few arguments to function 'lv_style_set_bg_color'
+   79 |         lv_style_set_bg_color(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, lv_color_hex(0x2196F3));
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:92:24: note: declared here
+   92 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_nonscalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:123:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  123 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_COLOR, bg_color, lv_color_t, _color, nonscalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:80:9: error: too few arguments to function 'lv_style_set_bg_grad_dir'
+   80 |         lv_style_set_bg_grad_dir(&style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, LV_GRAD_DIR_NONE);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:86:24: note: declared here
+   86 |     static inline void lv_style_set_##func_name (lv_style_t * style, lv_state_t state, value_type value)                 \
+      |                        ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:100:5: note: in expansion of macro '_OBJ_SET_STYLE_scalar'
+  100 |     _OBJ_SET_STYLE_##scalar(prop_name, func_name, value_type, style_type)
+      |     ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj_style_dec.h:122:1: note: in expansion of macro '_LV_OBJ_STYLE_SET_GET_DECLARE'
+  122 | _LV_OBJ_STYLE_SET_GET_DECLARE(BG_GRAD_DIR, bg_grad_dir, lv_grad_dir_t, _int, scalar)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:81:26: warning: passing argument 1 of 'lv_obj_add_style' makes pointer from integer without a cast [-Wint-conversion]
+   81 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, LV_PART_ITEMS|LV_STATE_CHECKED);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          int
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:34: note: expected 'lv_obj_t *' {aka 'struct _lv_obj_t *'} but argument is of type 'int'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                       ~~~~~~~~~~~^~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:81:81: warning: passing argument 2 of 'lv_obj_add_style' makes integer from pointer without a cast [-Wint-conversion]
+   81 |         lv_obj_add_style(lv_tabview_get_tab_btns(ui->WidgetsDemo_tabview_Main), &style_WidgetsDemo_tabview_Main_extra_btnm_items_checked, LV_PART_ITEMS|LV_STATE_CHECKED);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 lv_style_t *
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:511:47: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'lv_style_t *'
+  511 | void lv_obj_add_style(lv_obj_t * obj, uint8_t part, lv_style_t * style);
+      |                                       ~~~~~~~~^~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:85:59: error: too few arguments to function 'lv_label_create'
+   85 |         lv_obj_t * WidgetsDemo_tabview_Main_tab_1_label = lv_label_create(ui->WidgetsDemo_tabview_Main_tab_1);
+      |                                                           ^~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_img.h:22,
+                 from /home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/lvgl.h:39:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:89:37: error: too few arguments to function 'lv_obj_create'
+   89 |         ui->WidgetsDemo_cont_Card = lv_obj_create(ui->WidgetsDemo_tabview_Main_tab_1);
+      |                                     ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:305:12: note: declared here
+  305 | lv_obj_t * lv_obj_create(lv_obj_t * parent, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:96:9: error: implicit declaration of function 'lv_obj_set_style_border_opa'; did you mean 'lv_obj_get_style_border_opa'? [-Werror=implicit-function-declaration]
+   96 |         lv_obj_set_style_border_opa(ui->WidgetsDemo_cont_Card, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_border_opa
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:97:9: error: implicit declaration of function 'lv_obj_set_style_border_color'; did you mean 'lv_obj_get_style_border_color'? [-Werror=implicit-function-declaration]
+   97 |         lv_obj_set_style_border_color(ui->WidgetsDemo_cont_Card, lv_color_hex(0xc9c9c9), LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_border_color
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:98:9: error: implicit declaration of function 'lv_obj_set_style_border_side'; did you mean 'lv_obj_get_style_border_side'? [-Werror=implicit-function-declaration]
+   98 |         lv_obj_set_style_border_side(ui->WidgetsDemo_cont_Card, LV_BORDER_SIDE_FULL, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_border_side
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:103:9: error: implicit declaration of function 'lv_obj_set_style_pad_top'; did you mean 'lv_obj_get_style_pad_top'? [-Werror=implicit-function-declaration]
+  103 |         lv_obj_set_style_pad_top(ui->WidgetsDemo_cont_Card, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_pad_top
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:104:9: error: implicit declaration of function 'lv_obj_set_style_pad_bottom'; did you mean 'lv_obj_get_style_pad_bottom'? [-Werror=implicit-function-declaration]
+  104 |         lv_obj_set_style_pad_bottom(ui->WidgetsDemo_cont_Card, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_pad_bottom
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:105:9: error: implicit declaration of function 'lv_obj_set_style_pad_left'; did you mean 'lv_obj_get_style_pad_left'? [-Werror=implicit-function-declaration]
+  105 |         lv_obj_set_style_pad_left(ui->WidgetsDemo_cont_Card, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_pad_left
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:106:9: error: implicit declaration of function 'lv_obj_set_style_pad_right'; did you mean 'lv_obj_get_style_pad_right'? [-Werror=implicit-function-declaration]
+  106 |         lv_obj_set_style_pad_right(ui->WidgetsDemo_cont_Card, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_pad_right
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:110:38: error: too few arguments to function 'lv_label_create'
+  110 |         ui->WidgetsDemo_label_Name = lv_label_create(ui->WidgetsDemo_cont_Card);
+      |                                      ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:112:60: error: 'LV_LABEL_LONG_WRAP' undeclared (first use in this function); did you mean 'LV_LABEL_LONG_CROP'?
+  112 |         lv_label_set_long_mode(ui->WidgetsDemo_label_Name, LV_LABEL_LONG_WRAP);
+      |                                                            ^~~~~~~~~~~~~~~~~~
+      |                                                            LV_LABEL_LONG_CROP
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:120:65: error: 'lv_font_montserratMedium_32' undeclared (first use in this function); did you mean 'lv_font_montserrat_12'?
+  120 |         lv_obj_set_style_text_font(ui->WidgetsDemo_label_Name, &lv_font_montserratMedium_32, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                 lv_font_montserrat_12
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:124:9: error: implicit declaration of function 'lv_obj_set_style_text_align'; did you mean 'lv_obj_get_style_text_font'? [-Werror=implicit-function-declaration]
+  124 |         lv_obj_set_style_text_align(ui->WidgetsDemo_label_Name, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_text_font
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:124:65: error: 'LV_TEXT_ALIGN_LEFT' undeclared (first use in this function); did you mean 'LV_LABEL_ALIGN_LEFT'?
+  124 |         lv_obj_set_style_text_align(ui->WidgetsDemo_label_Name, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                 ^~~~~~~~~~~~~~~~~~
+      |                                                                 LV_LABEL_ALIGN_LEFT
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:133:39: error: too few arguments to function 'lv_label_create'
+  133 |         ui->WidgetsDemo_label_Email = lv_label_create(ui->WidgetsDemo_cont_Card);
+      |                                       ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:143:66: error: 'lv_font_montserratMedium_18' undeclared (first use in this function); did you mean 'lv_font_montserrat_12'?
+  143 |         lv_obj_set_style_text_font(ui->WidgetsDemo_label_Email, &lv_font_montserratMedium_18, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                  lv_font_montserrat_12
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:156:38: error: too few arguments to function 'lv_label_create'
+  156 |         ui->WidgetsDemo_label_Tele = lv_label_create(ui->WidgetsDemo_cont_Card);
+      |                                      ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:179:38: error: too few arguments to function 'lv_img_create'
+  179 |         ui->WidgetsDemo_img_Avatar = lv_img_create(ui->WidgetsDemo_cont_Card);
+      |                                      ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_img.h:65:12: note: declared here
+   65 | lv_obj_t * lv_img_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:180:53: error: 'LV_OBJ_FLAG_CLICKABLE' undeclared (first use in this function)
+  180 |         lv_obj_add_flag(ui->WidgetsDemo_img_Avatar, LV_OBJ_FLAG_CLICKABLE);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:188:9: error: implicit declaration of function 'lv_obj_set_style_img_opa'; did you mean 'lv_obj_get_style_image_opa'? [-Werror=implicit-function-declaration]
+  188 |         lv_obj_set_style_img_opa(ui->WidgetsDemo_img_Avatar, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_image_opa
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:192:59: error: too few arguments to function 'lv_label_create'
+  192 |         lv_obj_t * WidgetsDemo_tabview_Main_tab_2_label = lv_label_create(ui->WidgetsDemo_tabview_Main_tab_2);
+      |                                                           ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:197:59: error: too few arguments to function 'lv_label_create'
+  197 |         lv_obj_t * WidgetsDemo_tabview_Main_tab_3_label = lv_label_create(ui->WidgetsDemo_tabview_Main_tab_3);
+      |                                                           ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_widgets/lv_label.h:118:12: note: declared here
+  118 | lv_obj_t * lv_label_create(lv_obj_t * par, const lv_obj_t * copy);
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:202:29: error: 'lv_ui' has no member named 'WidgetsDemo_cont_ColorChanger'; did you mean 'WidgetsDemo_cont_Card'?
+  202 |         lv_obj_set_size(ui->WidgetsDemo_cont_ColorChanger, WIDTH_REFER(40), WIDTH_REFER(40));
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                             WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:202:60: error: implicit declaration of function 'WIDTH_REFER' [-Werror=implicit-function-declaration]
+  202 |         lv_obj_set_size(ui->WidgetsDemo_cont_ColorChanger, WIDTH_REFER(40), WIDTH_REFER(40));
+      |                                                            ^~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:203:26: error: 'lv_ui' has no member named 'WidgetsDemo_cont_ColorChanger'; did you mean 'WidgetsDemo_cont_Card'?
+  203 |         lv_obj_align(ui->WidgetsDemo_cont_ColorChanger, LV_ALIGN_BOTTOM_RIGHT, - WIDTH_REFER(10), - WIDTH_REFER(10));
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:203:57: error: 'LV_ALIGN_BOTTOM_RIGHT' undeclared (first use in this function); did you mean 'LV_ALIGN_IN_BOTTOM_RIGHT'?
+  203 |         lv_obj_align(ui->WidgetsDemo_cont_ColorChanger, LV_ALIGN_BOTTOM_RIGHT, - WIDTH_REFER(10), - WIDTH_REFER(10));
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~
+      |                                                         LV_ALIGN_IN_BOTTOM_RIGHT
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:203:9: error: too few arguments to function 'lv_obj_align'
+  203 |         lv_obj_align(ui->WidgetsDemo_cont_ColorChanger, LV_ALIGN_BOTTOM_RIGHT, - WIDTH_REFER(10), - WIDTH_REFER(10));
+      |         ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:464:6: note: declared here
+  464 | void lv_obj_align(lv_obj_t * obj, const lv_obj_t * base, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:206:29: error: 'lv_ui' has no member named 'WidgetsDemo_btn_ColorSW'; did you mean 'WidgetsDemo_cont_Card'?
+  206 |         lv_obj_set_size(ui->WidgetsDemo_btn_ColorSW, WIDTH_REFER(36), WIDTH_REFER(36));
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+      |                             WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:207:26: error: 'lv_ui' has no member named 'WidgetsDemo_btn_ColorSW'; did you mean 'WidgetsDemo_cont_Card'?
+  207 |         lv_obj_align(ui->WidgetsDemo_btn_ColorSW, LV_ALIGN_BOTTOM_RIGHT, - WIDTH_REFER(12), - WIDTH_REFER(12));
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                          WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:207:9: error: too few arguments to function 'lv_obj_align'
+  207 |         lv_obj_align(ui->WidgetsDemo_btn_ColorSW, LV_ALIGN_BOTTOM_RIGHT, - WIDTH_REFER(12), - WIDTH_REFER(12));
+      |         ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:464:6: note: declared here
+  464 | void lv_obj_align(lv_obj_t * obj, const lv_obj_t * base, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+      |      ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:208:33: error: 'lv_ui' has no member named 'WidgetsDemo_btn_ColorSW'; did you mean 'WidgetsDemo_cont_Card'?
+  208 |         lv_obj_add_event_cb(ui->WidgetsDemo_btn_ColorSW, color_changer_event_cb, LV_EVENT_ALL, ui->WidgetsDemo_cont_ColorChanger);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                 WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:208:58: error: 'color_changer_event_cb' undeclared (first use in this function)
+  208 |         lv_obj_add_event_cb(ui->WidgetsDemo_btn_ColorSW, color_changer_event_cb, LV_EVENT_ALL, ui->WidgetsDemo_cont_ColorChanger);
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:208:100: error: 'lv_ui' has no member named 'WidgetsDemo_cont_ColorChanger'; did you mean 'WidgetsDemo_cont_Card'?
+  208 |         lv_obj_add_event_cb(ui->WidgetsDemo_btn_ColorSW, color_changer_event_cb, LV_EVENT_ALL, ui->WidgetsDemo_cont_ColorChanger);
+      |                                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                    WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:211:9: error: implicit declaration of function 'lv_obj_set_style_bg_img_src'; did you mean 'lv_obj_get_style_bg_color'? [-Werror=implicit-function-declaration]
+  211 |         lv_obj_set_style_bg_img_src(ui->WidgetsDemo_btn_ColorSW, LV_SYMBOL_TINT, 0);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_get_style_bg_color
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:211:41: error: 'lv_ui' has no member named 'WidgetsDemo_btn_ColorSW'; did you mean 'WidgetsDemo_cont_Card'?
+  211 |         lv_obj_set_style_bg_img_src(ui->WidgetsDemo_btn_ColorSW, LV_SYMBOL_TINT, 0);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                         WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:211:66: error: 'LV_SYMBOL_TINT' undeclared (first use in this function); did you mean 'LV_SYMBOL_LIST'?
+  211 |         lv_obj_set_style_bg_img_src(ui->WidgetsDemo_btn_ColorSW, LV_SYMBOL_TINT, 0);
+      |                                                                  ^~~~~~~~~~~~~~
+      |                                                                  LV_SYMBOL_LIST
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:216:24: error: implicit declaration of function 'lv_obj_get_child_cnt'; did you mean 'lv_obj_get_child_back'? [-Werror=implicit-function-declaration]
+  216 |         for(i = 0; i < lv_obj_get_child_cnt(ui->WidgetsDemo_cont_ColorChanger); i++) {
+      |                        ^~~~~~~~~~~~~~~~~~~~
+      |                        lv_obj_get_child_back
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:216:49: error: 'lv_ui' has no member named 'WidgetsDemo_cont_ColorChanger'; did you mean 'WidgetsDemo_cont_Card'?
+  216 |         for(i = 0; i < lv_obj_get_child_cnt(ui->WidgetsDemo_cont_ColorChanger); i++) {
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:217:44: error: 'lv_ui' has no member named 'WidgetsDemo_cont_ColorChanger'; did you mean 'WidgetsDemo_cont_Card'?
+  217 |                 btn = lv_obj_get_child(ui->WidgetsDemo_cont_ColorChanger, i);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                            WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:217:75: warning: passing argument 2 of 'lv_obj_get_child' makes pointer from integer without a cast [-Wint-conversion]
+  217 |                 btn = lv_obj_get_child(ui->WidgetsDemo_cont_ColorChanger, i);
+      |                                                                           ^
+      |                                                                           |
+      |                                                                           uint32_t {aka long unsigned int}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:873:68: note: expected 'const lv_obj_t *' {aka 'const struct _lv_obj_t *'} but argument is of type 'uint32_t' {aka 'long unsigned int'}
+  873 | lv_obj_t * lv_obj_get_child(const lv_obj_t * obj, const lv_obj_t * child);
+      |                                                   ~~~~~~~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:218:17: error: implicit declaration of function 'lv_obj_set_style_opa'; did you mean '_lv_obj_get_style_opa'? [-Werror=implicit-function-declaration]
+  218 |                 lv_obj_set_style_opa(btn, 0, 0);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+      |                 _lv_obj_get_style_opa
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:219:42: error: 'color_event_cb' undeclared (first use in this function)
+  219 |                 lv_obj_add_event_cb(btn, color_event_cb, LV_EVENT_ALL, btn);
+      |                                          ^~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:223:28: error: 'lv_ui' has no member named 'WidgetsDemo_label_IconEmail'; did you mean 'WidgetsDemo_label_Email'?
+  223 |         lv_img_set_src(ui->WidgetsDemo_label_IconEmail, LV_SYMBOL_ENVELOPE);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                            WidgetsDemo_label_Email
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:223:57: error: 'LV_SYMBOL_ENVELOPE' undeclared (first use in this function); did you mean 'LV_SYMBOL_EYE_OPEN'?
+  223 |         lv_img_set_src(ui->WidgetsDemo_label_IconEmail, LV_SYMBOL_ENVELOPE);
+      |                                                         ^~~~~~~~~~~~~~~~~~
+      |                                                         LV_SYMBOL_EYE_OPEN
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:224:28: error: 'lv_ui' has no member named 'WidgetsDemo_label_IconCall'; did you mean 'WidgetsDemo_label_Email'?
+  224 |         lv_img_set_src(ui->WidgetsDemo_label_IconCall, LV_SYMBOL_CALL );
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                            WidgetsDemo_label_Email
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:227:33: error: 'lv_ui' has no member named 'WidgetsDemo_ta_UName'; did you mean 'WidgetsDemo_label_Name'?
+  227 |         lv_obj_add_event_cb(ui->WidgetsDemo_ta_UName, textarea_event_cb, LV_EVENT_ALL, ui->g_kb_WidgetsDemo);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+      |                                 WidgetsDemo_label_Name
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:227:55: error: 'textarea_event_cb' undeclared (first use in this function)
+  227 |         lv_obj_add_event_cb(ui->WidgetsDemo_ta_UName, textarea_event_cb, LV_EVENT_ALL, ui->g_kb_WidgetsDemo);
+      |                                                       ^~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:228:31: error: 'lv_ui' has no member named 'WidgetsDemo_ta_Password'
+  228 |         lv_obj_add_event_cb(ui->WidgetsDemo_ta_Password, textarea_event_cb, LV_EVENT_ALL, ui->g_kb_WidgetsDemo);
+      |                               ^~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:231:33: error: 'lv_ui' has no member named 'WidgetsDemo_chart_MS'; did you mean 'WidgetsDemo_cont_Card'?
+  231 |         lv_obj_add_event_cb(ui->WidgetsDemo_chart_MS, shop_chart_event_cb, LV_EVENT_ALL, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+      |                                 WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:231:55: error: 'shop_chart_event_cb' undeclared (first use in this function)
+  231 |         lv_obj_add_event_cb(ui->WidgetsDemo_chart_MS, shop_chart_event_cb, LV_EVENT_ALL, NULL);
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:232:33: error: 'lv_ui' has no member named 'WidgetsDemo_chart_UV'; did you mean 'WidgetsDemo_cont_Card'?
+  232 |         lv_obj_add_event_cb(ui->WidgetsDemo_chart_UV, chart_event_cb, LV_EVENT_ALL, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+      |                                 WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:232:55: error: 'chart_event_cb' undeclared (first use in this function)
+  232 |         lv_obj_add_event_cb(ui->WidgetsDemo_chart_UV, chart_event_cb, LV_EVENT_ALL, NULL);
+      |                                                       ^~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:233:33: error: 'lv_ui' has no member named 'WidgetsDemo_chart_MR'; did you mean 'WidgetsDemo_cont_Card'?
+  233 |         lv_obj_add_event_cb(ui->WidgetsDemo_chart_MR, chart_event_cb, LV_EVENT_ALL, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+      |                                 WidgetsDemo_cont_Card
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:236:28: error: 'lv_ui' has no member named 'WidgetsDemo_cb_Milestone'
+  236 |         lv_obj_add_state(ui->WidgetsDemo_cb_Milestone, LV_STATE_DISABLED);
+      |                            ^~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:240:47: error: 'lv_ui' has no member named 'WidgetsDemo_cont_Notification'
+  240 |         for(i = 0; i < lv_obj_get_child_cnt(ui->WidgetsDemo_cont_Notification); i++) {
+      |                                               ^~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:241:41: error: 'lv_ui' has no member named 'WidgetsDemo_cont_Notification'
+  241 |                 cb = lv_obj_get_child(ui->WidgetsDemo_cont_Notification, i);
+      |                                         ^~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:241:74: warning: passing argument 2 of 'lv_obj_get_child' makes pointer from integer without a cast [-Wint-conversion]
+  241 |                 cb = lv_obj_get_child(ui->WidgetsDemo_cont_Notification, i);
+      |                                                                          ^
+      |                                                                          |
+      |                                                                          uint32_t {aka long unsigned int}
+/home/dt/esp/5_35_LVGL_Full_Test-S024/components/lvgl/lvgl/src/lv_core/lv_obj.h:873:68: note: expected 'const lv_obj_t *' {aka 'const struct _lv_obj_t *'} but argument is of type 'uint32_t' {aka 'long unsigned int'}
+  873 | lv_obj_t * lv_obj_get_child(const lv_obj_t * obj, const lv_obj_t * child);
+      |                                                   ~~~~~~~~~~~~~~~~~^~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:242:20: error: implicit declaration of function 'lv_obj_get_class'; did you mean 'lv_obj_get_click'? [-Werror=implicit-function-declaration]
+  242 |                 if(lv_obj_get_class(cb) == &lv_checkbox_class) {
+      |                    ^~~~~~~~~~~~~~~~
+      |                    lv_obj_get_click
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:242:45: error: 'lv_checkbox_class' undeclared (first use in this function); did you mean 'lv_checkbox_create'?
+  242 |                 if(lv_obj_get_class(cb) == &lv_checkbox_class) {
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             lv_checkbox_create
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:243:85: error: 'lv_ui' has no member named 'WidgetsDemo_cb_ItemPur'
+  243 |                         lv_obj_set_style_text_font(cb, lv_obj_get_style_text_font(ui->WidgetsDemo_cb_ItemPur, 0), LV_PART_INDICATOR|LV_STATE_CHECKED);
+      |                                                                                     ^~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:243:115: error: 'LV_PART_INDICATOR' undeclared (first use in this function)
+  243 |                         lv_obj_set_style_text_font(cb, lv_obj_get_style_text_font(ui->WidgetsDemo_cb_ItemPur, 0), LV_PART_INDICATOR|LV_STATE_CHECKED);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:248:9: error: implicit declaration of function 'lv_obj_update_layout'; did you mean 'lv_obj_fade_out'? [-Werror=implicit-function-declaration]
+  248 |         lv_obj_update_layout(ui->WidgetsDemo);
+      |         ^~~~~~~~~~~~~~~~~~~~
+      |         lv_obj_fade_out
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/setup_scr_WidgetsDemo.c:251:9: error: implicit declaration of function 'events_init_WidgetsDemo' [-Werror=implicit-function-declaration]
+  251 |         events_init_WidgetsDemo(ui);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/weatherReport.c.obj
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:6:13: warning: 'showChongqin' defined but not used [-Wunused-function]
+    6 | static void showChongqin(char* text){
+      |             ^~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

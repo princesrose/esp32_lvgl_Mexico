@@ -1,0 +1,109 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d89d9: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:114
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d89d6: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:113
+0x400d8ae1: cJSON_parse_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:171
+0x400d8bd5: http_client_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:205
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4014d7e0: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 2)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014d7dd: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 1)
+0x400fc28a: wifi_default_action_sta_got_ip at /home/dt/esp/esp-idf/components/esp_wifi/src/wifi_default.c:135
+0x40189889: handler_execute at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:135
+0x401893f3: esp_event_loop_run at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:592
+0x401894ad: esp_event_loop_run_task at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:105
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d89d9: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:114
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d89d6: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:113
+0x400d8ae1: cJSON_parse_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:171
+0x400d8bd5: http_client_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:205
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4014d7e0: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 2)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014d7dd: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 1)
+0x400fc28a: wifi_default_action_sta_got_ip at /home/dt/esp/esp-idf/components/esp_wifi/src/wifi_default.c:135
+0x40189889: handler_execute at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:135
+0x401893f3: esp_event_loop_run at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:592
+0x401894ad: esp_event_loop_run_task at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:105
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4014d7e0: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 2)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014d7dd: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 1)
+0x400fc28a: wifi_default_action_sta_got_ip at /home/dt/esp/esp-idf/components/esp_wifi/src/wifi_default.c:135
+0x40189889: handler_execute at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:135
+0x401893f3: esp_event_loop_run at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:592
+0x401894ad: esp_event_loop_run_task at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:105
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d89d9: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:114
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d89d6: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:113
+0x400d8ae1: cJSON_parse_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:171
+0x400d8bd5: http_client_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:205
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4014d7e0: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 2)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4014d7dd: esp_netif_action_got_ip at /home/dt/esp/esp-idf/components/esp_netif/esp_netif_handlers.c:93 (discriminator 1)
+0x400fc28a: wifi_default_action_sta_got_ip at /home/dt/esp/esp-idf/components/esp_wifi/src/wifi_default.c:135
+0x40189889: handler_execute at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:135
+0x401893f3: esp_event_loop_run at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:592
+0x401894ad: esp_event_loop_run_task at /home/dt/esp/esp-idf/components/esp_event/esp_event.c:105
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d89d9: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:114
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d89d6: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:113
+0x400d8ae1: cJSON_parse_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:171
+0x400d8bd5: http_client_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:205
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

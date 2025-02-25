@@ -1,0 +1,90 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:127: warning: "MAX_HTTP_OUTPUT_BUFFER" redefined
+  127 | #define MAX_HTTP_OUTPUT_BUFFER 2048
+      | 
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:116:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:51: note: this is the location of the previous definition
+   51 | #define MAX_HTTP_OUTPUT_BUFFER 1300
+      | 
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:73:13: warning: 'freeBuffer' declared 'static' but never defined [-Wunused-function]
+   73 | static void freeBuffer(char *buf, int bufSize);
+      |             ^~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:74:13: warning: 'showChongqin' declared 'static' but never defined [-Wunused-function]
+   74 | static void showChongqin(char* text);
+      |             ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:75:13: warning: 'showMexico' declared 'static' but never defined [-Wunused-function]
+   75 | static void showMexico(char* Text);
+      |             ^~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:76:13: warning: 'cJSON_parse_task' declared 'static' but never defined [-Wunused-function]
+   76 | static void cJSON_parse_task(char* text);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:77:13: warning: 'http_client_task' declared 'static' but never defined [-Wunused-function]
+   77 | static void http_client_task(void *pvParameters);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:78:13: warning: 'event_handler' declared 'static' but never defined [-Wunused-function]
+   78 | static void event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:80:13: warning: 'initialise_wifi' declared 'static' but never defined [-Wunused-function]
+   80 | static void initialise_wifi(void);
+      |             ^~~~~~~~~~~~~~~
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/main.c:117:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:21:23: warning: 'example_timer_on_alarm_cb_v1' declared 'static' but never defined [-Wunused-function]
+   21 | static bool IRAM_ATTR example_timer_on_alarm_cb_v1(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:22:23: warning: 'example_timer_on_alarm_cb_v2' declared 'static' but never defined [-Wunused-function]
+   22 | static bool IRAM_ATTR example_timer_on_alarm_cb_v2(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:23:23: warning: 'example_timer_on_alarm_cb_v3' declared 'static' but never defined [-Wunused-function]
+   23 | static bool IRAM_ATTR example_timer_on_alarm_cb_v3(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/freertosTest.h:14:20: warning: 'TIEMRTAG' defined but not used [-Wunused-variable]
+   14 | static const char *TIEMRTAG = "timer";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:50:20: warning: 'HTTP_TAG' defined but not used [-Wunused-variable]
+   50 | static const char *HTTP_TAG = "httpTask";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:48:18: warning: 'img' defined but not used [-Wunused-variable]
+   48 | static lv_obj_t* img = NULL;
+      |                  ^~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:47:13: warning: 'gl_got_ip' defined but not used [-Wunused-variable]
+   47 | static bool gl_got_ip = false;
+      |             ^~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:46:12: warning: 'gl_sta_ssid_len' defined but not used [-Wunused-variable]
+   46 | static int gl_sta_ssid_len = 0;
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:45:16: warning: 'gl_sta_ssid' defined but not used [-Wunused-variable]
+   45 | static uint8_t gl_sta_ssid[32];
+      |                ^~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:44:16: warning: 'gl_sta_bssid' defined but not used [-Wunused-variable]
+   44 | static uint8_t gl_sta_bssid[6];
+      |                ^~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:43:13: warning: 'gl_sta_connected' defined but not used [-Wunused-variable]
+   43 | static bool gl_sta_connected = false;
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:40:16: warning: 'WiFi_retry_num' defined but not used [-Wunused-variable]
+   40 | static uint8_t WiFi_retry_num = 0;
+      |                ^~~~~~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:39:20: warning: 'WiFi_TAG' defined but not used [-Wunused-variable]
+   39 | static const char *WiFi_TAG = "wifi_sta";
+      |                    ^~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:36:27: warning: 'wifi_event_group' defined but not used [-Wunused-variable]
+   36 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/weatherReport.c.obj
+In file included from /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:1:
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:75:13: warning: 'showMexico' declared 'static' but never defined [-Wunused-function]
+   75 | static void showMexico(char* Text);
+      |             ^~~~~~~~~~
+/home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.h:48:18: warning: 'img' defined but not used [-Wunused-variable]
+   48 | static lv_obj_t* img = NULL;
+      |                  ^~~
+[6/11] Linking C static library esp-idf/main/libmain.a
+FAILED: esp-idf/main/libmain.a 
+: && /opt/cmake-3.28.3-linux-x86_64/bin/cmake -E rm -f esp-idf/main/libmain.a && /home/dt/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc esp-idf/main/libmain.a  esp-idf/main/CMakeFiles/__idf_main.dir/freertosTest.c.obj esp-idf/main/CMakeFiles/__idf_main.dir/weatherReport.c.obj esp-idf/main/CMakeFiles/__idf_main.dir/_wepicture_alpha_180x180.c.obj esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj && /home/dt/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib esp-idf/main/libmain.a && :
+/home/dt/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp-elf-ranlib: unable to copy file 'esp-idf/main/libmain.a'; reason: 没有那个文件或目录
+ninja: build stopped: subcommand failed.

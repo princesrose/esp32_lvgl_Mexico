@@ -1,0 +1,21 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d899d: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:110 (discriminator 1)
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400d899a: showMexico at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:110
+0x400d8ad9: cJSON_parse_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:165
+0x400d8bcd: http_client_task at /home/dt/esp/5_35_LVGL_Full_Test-S024/main/weatherReport.c:199
+0x4008b185: vPortTaskWrapper at /home/dt/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
