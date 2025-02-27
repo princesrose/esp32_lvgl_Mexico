@@ -1,0 +1,168 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/main.c:127: warning: "MAX_HTTP_OUTPUT_BUFFER" redefined
+  127 | #define MAX_HTTP_OUTPUT_BUFFER 2048
+      | 
+In file included from /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/main.c:116:
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:56: note: this is the location of the previous definition
+   56 | #define MAX_HTTP_OUTPUT_BUFFER 1300
+      | 
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:64:13: warning: 'weather_timer_callback' declared 'static' but never defined [-Wunused-function]
+   64 | static void weather_timer_callback(TimerHandle_t xTimer);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:65:13: warning: 'freeBuffer' declared 'static' but never defined [-Wunused-function]
+   65 | static void freeBuffer(char *buf, int bufSize);
+      |             ^~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:66:13: warning: 'showChongqin' declared 'static' but never defined [-Wunused-function]
+   66 | static void showChongqin(char* text);
+      |             ^~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:67:13: warning: 'showMexico' declared 'static' but never defined [-Wunused-function]
+   67 | static void showMexico(char* Text);
+      |             ^~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:68:13: warning: 'cJSON_parse_task' declared 'static' but never defined [-Wunused-function]
+   68 | static void cJSON_parse_task(char* text);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:69:13: warning: 'http_client_task' declared 'static' but never defined [-Wunused-function]
+   69 | static void http_client_task(void *pvParameters);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:70:13: warning: 'event_handler' declared 'static' but never defined [-Wunused-function]
+   70 | static void event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:72:13: warning: 'initialise_wifi' declared 'static' but never defined [-Wunused-function]
+   72 | static void initialise_wifi(void);
+      |             ^~~~~~~~~~~~~~~
+In file included from /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/main.c:117:
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/freertosTest.h:21:23: warning: 'example_timer_on_alarm_cb_v1' declared 'static' but never defined [-Wunused-function]
+   21 | static bool IRAM_ATTR example_timer_on_alarm_cb_v1(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/freertosTest.h:22:23: warning: 'example_timer_on_alarm_cb_v2' declared 'static' but never defined [-Wunused-function]
+   22 | static bool IRAM_ATTR example_timer_on_alarm_cb_v2(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/freertosTest.h:23:23: warning: 'example_timer_on_alarm_cb_v3' declared 'static' but never defined [-Wunused-function]
+   23 | static bool IRAM_ATTR example_timer_on_alarm_cb_v3(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/freertosTest.h:14:20: warning: 'TIEMRTAG' defined but not used [-Wunused-variable]
+   14 | static const char *TIEMRTAG = "timer";
+      |                    ^~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:55:20: warning: 'HTTP_TAG' defined but not used [-Wunused-variable]
+   55 | static const char *HTTP_TAG = "httpTask";
+      |                    ^~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:53:22: warning: 'weather_timer' defined but not used [-Wunused-variable]
+   53 | static TimerHandle_t weather_timer;
+      |                      ^~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:52:18: warning: 'img' defined but not used [-Wunused-variable]
+   52 | static lv_obj_t* img = NULL;
+      |                  ^~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:51:13: warning: 'gl_got_ip' defined but not used [-Wunused-variable]
+   51 | static bool gl_got_ip = false;
+      |             ^~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:50:12: warning: 'gl_sta_ssid_len' defined but not used [-Wunused-variable]
+   50 | static int gl_sta_ssid_len = 0;
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:49:16: warning: 'gl_sta_ssid' defined but not used [-Wunused-variable]
+   49 | static uint8_t gl_sta_ssid[32];
+      |                ^~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:48:16: warning: 'gl_sta_bssid' defined but not used [-Wunused-variable]
+   48 | static uint8_t gl_sta_bssid[6];
+      |                ^~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:47:13: warning: 'gl_sta_connected' defined but not used [-Wunused-variable]
+   47 | static bool gl_sta_connected = false;
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:44:16: warning: 'WiFi_retry_num' defined but not used [-Wunused-variable]
+   44 | static uint8_t WiFi_retry_num = 0;
+      |                ^~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:43:20: warning: 'WiFi_TAG' defined but not used [-Wunused-variable]
+   43 | static const char *WiFi_TAG = "wifi_sta";
+      |                    ^~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:40:27: warning: 'wifi_event_group' defined but not used [-Wunused-variable]
+   40 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable lvgl-demo.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+[9/10] cd /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/partition_table/partition-table.bin /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/lvgl-demo.bin
+lvgl-demo.bin binary size 0x1055a0 bytes. Smallest app partition is 0x271000 bytes. 0x16ba60 bytes (58%) free.
+[9/10] cd /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/esptool_py && /opt/cmake-3.28.3-linux-x86_64/bin/cmake -D IDF_PATH=/home/dt/esp/esp32_lvgl_Mexico/esp-idf -D "SERIAL_TOOL=/home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python;;/home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build -P /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 lvgl-demo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev4
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:1e:94:e8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00115fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16376...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16376 compressed) at 0x00001000 in 0.8 seconds (effective 281.0 kbit/s)...
+Hash of data verified.
+Compressed 1070496 bytes to 669948...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ce46... (4 %)
+Writing at 0x00027661... (7 %)
+Writing at 0x0002d88c... (9 %)
+Writing at 0x000327b9... (12 %)
+Writing at 0x0003be32... (14 %)
+Writing at 0x00043f17... (17 %)
+Writing at 0x00049b0d... (19 %)
+Writing at 0x0004fcae... (21 %)
+Writing at 0x00055fd6... (24 %)
+Writing at 0x0005dac9... (26 %)
+Writing at 0x00063a2e... (29 %)
+Writing at 0x000699c5... (31 %)
+Writing at 0x0006f8b7... (34 %)
+Writing at 0x000756f0... (36 %)
+Writing at 0x0007b3ce... (39 %)
+Writing at 0x00081bd8... (41 %)
+Writing at 0x00086d12... (43 %)
+Writing at 0x0008c203... (46 %)
+Writing at 0x000915fd... (48 %)
+Writing at 0x00096a0f... (51 %)
+Writing at 0x0009c0b9... (53 %)
+Writing at 0x000a1861... (56 %)
+Writing at 0x000a77cc... (58 %)
+Writing at 0x000ad080... (60 %)
+Writing at 0x000b2e21... (63 %)
+Writing at 0x000b8afe... (65 %)
+Writing at 0x000be411... (68 %)
+Writing at 0x000c3e7f... (70 %)
+Writing at 0x000c9d1c... (73 %)
+Writing at 0x000d01a4... (75 %)
+Writing at 0x000d5c59... (78 %)
+Writing at 0x000db6d9... (80 %)
+Writing at 0x000e111b... (82 %)
+Writing at 0x000e7387... (85 %)
+Writing at 0x000f2c8a... (87 %)
+Writing at 0x000f8c4d... (90 %)
+Writing at 0x000ff156... (92 %)
+Writing at 0x00104a66... (95 %)
+Writing at 0x0010ac20... (97 %)
+Writing at 0x001106ea... (100 %)
+Wrote 1070496 bytes (669948 compressed) at 0x00010000 in 15.2 seconds (effective 563.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 507.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

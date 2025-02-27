@@ -56,7 +56,9 @@
 		"string.h": "c",
 		"freertostest.h": "c",
 		"stdio.h": "c",
-		"lvgl.h": "c"
+		"lvgl.h": "c",
+		"compare": "c",
+		"cstdint": "c"
 	},
 	"editor.insertSpaces": false,      //不检测到第一个是tab后面都用tab
 	"editor.detectIndentation": false,      //不检测到第一个是tab后面都用tab
@@ -64,5 +66,6 @@
 	"editor.renderWhitespace": "all",       //显示4个空格是....
 	"editor.tabSize": 4,
 	"idf.adapterTargetName": "esp32",
-	"idf.port": "/dev/ttyUSB0", //tab设置为4个空格
+	"idf.port": "/dev/ttyUSB0",
+	"idf.pythonInstallPath": "/home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python", //tab设置为4个空格
 }

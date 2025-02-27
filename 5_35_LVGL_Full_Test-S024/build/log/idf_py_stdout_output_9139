@@ -1,0 +1,90 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/bootloader/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/bootloader/bootloader.bin
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/main.c:126: warning: "MAX_HTTP_OUTPUT_BUFFER" redefined
+  126 | #define MAX_HTTP_OUTPUT_BUFFER 2048
+      | 
+In file included from /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/main.c:116:
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:59: note: this is the location of the previous definition
+   59 | #define MAX_HTTP_OUTPUT_BUFFER 1300
+      | 
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:72:13: warning: 'time_sync_notification' declared 'static' but never defined [-Wunused-function]
+   72 | static void time_sync_notification(struct timeval *tv);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:75:13: warning: 'weather_timer_callback' declared 'static' but never defined [-Wunused-function]
+   75 | static void weather_timer_callback(TimerHandle_t xTimer);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:76:13: warning: 'freeBuffer' declared 'static' but never defined [-Wunused-function]
+   76 | static void freeBuffer(char *buf, int bufSize);
+      |             ^~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:77:13: warning: 'showChongqin' declared 'static' but never defined [-Wunused-function]
+   77 | static void showChongqin(char* text);
+      |             ^~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:78:13: warning: 'showMexico' declared 'static' but never defined [-Wunused-function]
+   78 | static void showMexico(char* Text);
+      |             ^~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:79:13: warning: 'cJSON_parse_task' declared 'static' but never defined [-Wunused-function]
+   79 | static void cJSON_parse_task(char* text);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:80:13: warning: 'http_client_task' declared 'static' but never defined [-Wunused-function]
+   80 | static void http_client_task(void *pvParameters);
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:81:13: warning: 'event_handler' declared 'static' but never defined [-Wunused-function]
+   81 | static void event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:83:13: warning: 'initialise_wifi' declared 'static' but never defined [-Wunused-function]
+   83 | static void initialise_wifi(void);
+      |             ^~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:58:20: warning: 'HTTP_TAG' defined but not used [-Wunused-variable]
+   58 | static const char *HTTP_TAG = "httpTask";
+      |                    ^~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:56:22: warning: 'weather_timer' defined but not used [-Wunused-variable]
+   56 | static TimerHandle_t weather_timer;
+      |                      ^~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:54:13: warning: 'gl_got_ip' defined but not used [-Wunused-variable]
+   54 | static bool gl_got_ip = false;
+      |             ^~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:53:12: warning: 'gl_sta_ssid_len' defined but not used [-Wunused-variable]
+   53 | static int gl_sta_ssid_len = 0;
+      |            ^~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:52:16: warning: 'gl_sta_ssid' defined but not used [-Wunused-variable]
+   52 | static uint8_t gl_sta_ssid[32];
+      |                ^~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:51:16: warning: 'gl_sta_bssid' defined but not used [-Wunused-variable]
+   51 | static uint8_t gl_sta_bssid[6];
+      |                ^~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:50:13: warning: 'gl_sta_connected' defined but not used [-Wunused-variable]
+   50 | static bool gl_sta_connected = false;
+      |             ^~~~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:47:16: warning: 'WiFi_retry_num' defined but not used [-Wunused-variable]
+   47 | static uint8_t WiFi_retry_num = 0;
+      |                ^~~~~~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:46:20: warning: 'WiFi_TAG' defined but not used [-Wunused-variable]
+   46 | static const char *WiFi_TAG = "wifi_sta";
+      |                    ^~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:43:27: warning: 'wifi_event_group' defined but not used [-Wunused-variable]
+   43 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/weatherReport.c.obj
+In file included from /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.c:1:
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.h:78:13: warning: 'showMexico' declared 'static' but never defined [-Wunused-function]
+   78 | static void showMexico(char* Text);
+      |             ^~~~~~~~~~
+/home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/main/weatherReport.c:6:13: warning: 'time_sync_notification' defined but not used [-Wunused-function]
+    6 | static void time_sync_notification(struct timeval *tv){
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[6/11] Linking C static library esp-idf/main/libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Building C object CMakeFiles/Mexico-Weather.elf.dir/project_elf_src_esp32.c.obj
+[9/11] Linking CXX executable Mexico-Weather.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/Mexico-Weather.bin
+[11/11] cd /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/esp-idf/esptool_py && /home/dt/.espressif/python_env/idf5.4_py3.8_env/bin/python /home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/partition_table/partition-table.bin /home/dt/esp/esp32_lvgl_Mexico/5_35_LVGL_Full_Test-S024/build/Mexico-Weather.bin
+Mexico-Weather.bin binary size 0x109dd0 bytes. Smallest app partition is 0x271000 bytes. 0x167230 bytes (57%) free.

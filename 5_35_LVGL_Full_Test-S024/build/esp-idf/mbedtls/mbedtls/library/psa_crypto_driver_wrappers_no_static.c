@@ -1,0 +1,1 @@
+/home/dt/esp/esp32_lvgl_Mexico/esp-idf/components/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c

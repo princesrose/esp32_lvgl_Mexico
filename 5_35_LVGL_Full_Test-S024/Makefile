@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := lvgl-demo
+PROJECT_NAME := Mexico-Weather
 
 # Add new components (source folders)
 EXTRA_COMPONENT_DIRS := components/lvgl_esp32_drivers/lvgl_tft components/lvgl_esp32_drivers/lvgl_touch

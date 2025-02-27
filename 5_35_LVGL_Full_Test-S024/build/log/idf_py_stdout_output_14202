@@ -1,0 +1,249 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-826-g8760e6d2a7-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 27 2025 12:00:59[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00271000[0m
+[0;32mI (94) boot:  3 storage          Unknown data     01 81 00281000 00100000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2ceb0h (183984) map[0m
+[0;32mI (177) esp_image: segment 1: paddr=0003ced8 vaddr=3ffb0000 size=03140h ( 12608) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=bfb34h (785204) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=000ffb5c vaddr=3ffb3140 size=00f70h (  3952) load[0m
+[0;32mI (454) esp_image: segment 4: paddr=00100ad4 vaddr=40080000 size=192d8h (103128) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (523) cpu_start: Multicore app[0m
+[0;32mI (531) cpu_start: Pro cpu start user code[0m
+[0;32mI (531) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (532) app_init: Application information:[0m
+[0;32mI (534) app_init: Project name:     Mexico-Weather[0m
+[0;32mI (540) app_init: App version:      1373528-dirty[0m
+[0;32mI (545) app_init: ELF file SHA256:  d689550fb2a3583a...[0m
+[0;32mI (551) app_init: ESP-IDF:          v5.4-dev-826-g8760e6d2a7-dirty[0m
+[0;32mI (558) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (563) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (568) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFD5120 len 0000AEE0 (43 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400992D8 len 00006D28 (27 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+
+APP  LittlevGL Demo is start!~
+[0;32mI (1631) main_task: Returned from app_main()[0m
+lvgl_helpers->Display hor size: 320, ver size: 240
+lvgl_helpers->Display buffer size: 20480
+lvgl_helpers->Initializing SPI master for display
+lvgl_helpers->Configuring SPI host HSPI_HOST (1)
+lvgl_helpers->MISO pin: -1, MOSI pin: 13, SCLK pin: 14
+lvgl_helpers->Max transfer size: 40960 (bytes)
+lvgl_helpers->Initializing SPI bus...
+disp_spi->Adding SPI device
+disp_spi->Clock speed: 40000000Hz, mode: 0, CS pin: 15
+ILI9341->ili9341 Initialization....
+[0;32mI (2111) ILI9341: Enabling backlight.[0m
+ILI9341->Display orientation: LANDSCAPE_INVERTED
+ILI9341->0x36 command value: 0xE8
+lvgl_helpers->Initializing SPI master for touch
+[0;32mI (2111) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2131) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2131) XPT2046: XPT2046 Initialization[0m
+I (2231) wifi:wifi driver task: 3ffdefb8, prio:23, stack:6656, core=0
+I (2241) wifi:wifi firmware version: eb97ced
+I (2241) wifi:wifi certification version: v7.0
+I (2241) wifi:config NVS flash: enabled
+I (2241) wifi:config nano formating: disabled
+I (2251) wifi:Init data frame dynamic rx buffer num: 32
+I (2251) wifi:Init static rx mgmt buffer num: 5
+I (2251) wifi:Init management short buffer num: 32
+I (2261) wifi:Init dynamic tx buffer num: 32
+I (2261) wifi:Init static rx buffer size: 1600
+I (2271) wifi:Init static rx buffer num: 10
+I (2271) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2321) wifi_init: rx ba win: 6[0m
+[0;32mI (2321) wifi_init: accept mbox: 6[0m
+[0;32mI (2321) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2321) wifi_init: udp mbox: 6[0m
+[0;32mI (2321) wifi_init: tcp mbox: 6[0m
+[0;32mI (2321) wifi_init: tcp tx win: 5744[0m
+[0;32mI (2341) wifi_init: tcp rx win: 5744[0m
+[0;32mI (2341) wifi_init: tcp mss: 1440[0m
+[0;32mI (2341) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2341) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2401) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (2481) wifi:mode : sta (cc:7b:5c:1e:94:e8)
+I (2481) wifi:enable tsf
+[0;32mI (2481) wifi_sta: connect to AP:19-8-卧室 [0m
+[0;32mI (2481) wifi_sta: wifi_init_sta finished.[0m
+[0;32mI (2501) wifi_sta: WeatherTimer is begin.[0m
+I (2501) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (2501) wifi:state: init -> auth (0xb0)
+[0;32mI (2501) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:01 1969[0m
+I (3511) wifi:state: auth -> init (0x200)
+I (3511) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (3581) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:03 1969[0m
+[0;32mI (4601) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:04 1969[0m
+[0;32mI (5611) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:05 1969[0m
+[0;32mI (6621) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:06 1969[0m
+[0;32mI (7631) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:07 1969[0m
+[0;32mI (8641) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:08 1969[0m
+[0;32mI (9651) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:09 1969[0m
+[0;32mI (10661) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:10 1969[0m
+[0;32mI (11671) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:11 1969[0m
+[0;32mI (12681) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:12 1969[0m
+[0;32mI (13691) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:13 1969[0m
+[0;32mI (14701) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:14 1969[0m
+[0;32mI (15711) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:15 1969[0m
+[0;32mI (16721) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:16 1969[0m
+[0;32mI (17731) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:17 1969[0m
+[0;32mI (18741) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:18 1969[0m
+[0;32mI (19751) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:19 1969[0m
+[0;32mI (20761) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:20 1969[0m
+[0;32mI (21771) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:21 1969[0m
+[0;32mI (22781) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:22 1969[0m
+[0;32mI (23791) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:23 1969[0m
+[0;32mI (24801) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:24 1969[0m
+[0;32mI (25811) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:25 1969[0m
+[0;32mI (26821) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:26 1969[0m
+[0;32mI (27831) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:27 1969[0m
+[0;32mI (28841) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:28 1969[0m
+[0;32mI (29851) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:29 1969[0m
+[0;32mI (30861) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:30 1969[0m
+[0;32mI (31871) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:31 1969[0m
+[0;32mI (32881) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:32 1969[0m
+[0;32mI (33891) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:33 1969[0m
+[0;32mI (34901) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:34 1969[0m
+[0;32mI (35911) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:35 1969[0m
+[0;32mI (36921) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:36 1969[0m
+[0;32mI (37931) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:37 1969[0m
+[0;32mI (38941) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:38 1969[0m
+[0;32mI (39951) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:39 1969[0m
+[0;32mI (40961) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:40 1969[0m
+[0;32mI (41971) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:41 1969[0m
+[0;32mI (42981) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:42 1969[0m
+[0;32mI (43991) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:43 1969[0m
+[0;32mI (45001) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:44 1969[0m
+[0;32mI (46011) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:45 1969[0m
+[0;32mI (47021) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:46 1969[0m
+[0;32mI (48031) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:47 1969[0m
+[0;32mI (49041) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:48 1969[0m
+[0;32mI (50051) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:49 1969[0m
+[0;32mI (51061) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:50 1969[0m
+[0;32mI (52071) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:51 1969[0m
+[0;32mI (53081) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:52 1969[0m
+[0;32mI (54091) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:53 1969[0m
+[0;32mI (55101) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:54 1969[0m
+[0;32mI (56111) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:55 1969[0m
+[0;32mI (57121) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:56 1969[0m
+[0;32mI (58131) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:57 1969[0m
+[0;32mI (59141) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:58 1969[0m
+[0;32mI (60151) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:00:59 1969[0m
+[0;32mI (61161) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:00 1969[0m
+[0;32mI (62171) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:01 1969[0m
+[0;32mI (63181) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:02 1969[0m
+[0;32mI (64191) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:03 1969[0m
+[0;32mI (65201) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:04 1969[0m
+[0;32mI (66211) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:05 1969[0m
+[0;32mI (67221) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:06 1969[0m
+[0;32mI (68231) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:07 1969[0m
+[0;32mI (69241) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:08 1969[0m
+[0;32mI (70251) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:09 1969[0m
+[0;32mI (71261) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:10 1969[0m
+[0;32mI (72271) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:11 1969[0m
+[0;32mI (73281) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:12 1969[0m
+[0;32mI (74291) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:13 1969[0m
+[0;32mI (75301) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:14 1969[0m
+[0;32mI (76311) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:15 1969[0m
+[0;32mI (77321) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:16 1969[0m
+[0;32mI (78331) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:17 1969[0m
+[0;32mI (79341) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:18 1969[0m
+[0;32mI (80351) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:19 1969[0m
+[0;32mI (81361) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:20 1969[0m
+[0;32mI (82371) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:21 1969[0m
+[0;32mI (83381) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:22 1969[0m
+[0;32mI (84391) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:23 1969[0m
+[0;32mI (85401) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:24 1969[0m
+[0;32mI (86411) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:25 1969[0m
+[0;32mI (87421) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:26 1969[0m
+[0;32mI (88431) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:27 1969[0m
+[0;32mI (89441) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:28 1969[0m
+[0;32mI (90451) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:29 1969[0m
+[0;32mI (91461) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:30 1969[0m
+[0;32mI (92471) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:31 1969[0m
+[0;32mI (93481) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:32 1969[0m
+[0;32mI (94491) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:33 1969[0m
+[0;32mI (95501) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:34 1969[0m
+[0;32mI (96511) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:35 1969[0m
+[0;32mI (97521) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:36 1969[0m
+[0;32mI (98531) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:38 1969[0m
+[0;32mI (99541) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:39 1969[0m
+[0;32mI (100551) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:40 1969[0m
+[0;32mI (101561) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:41 1969[0m
+[0;32mI (102571) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:42 1969[0m
+[0;32mI (103581) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:43 1969[0m
+[0;32mI (104591) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:44 1969[0m
+[0;32mI (105601) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:45 1969[0m
+[0;32mI (106611) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:46 1969[0m
+[0;32mI (107621) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:47 1969[0m
+[0;32mI (108631) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:48 1969[0m
+[0;32mI (109641) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:49 1969[0m
+[0;32mI (110651) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:50 1969[0m
+[0;32mI (111661) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:51 1969[0m
+[0;32mI (112671) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:52 1969[0m
+[0;32mI (113681) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:53 1969[0m
+[0;32mI (114691) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:54 1969[0m
+[0;32mI (115701) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:55 1969[0m
+[0;32mI (116711) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:56 1969[0m
+[0;32mI (117721) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:57 1969[0m
+[0;32mI (118731) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:58 1969[0m
+[0;32mI (119741) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:01:59 1969[0m
+[0;32mI (120751) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:00 1969[0m
+[0;32mI (121761) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:01 1969[0m
+[0;32mI (122771) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:02 1969[0m
+[0;32mI (123781) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:03 1969[0m
+[0;32mI (124791) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:04 1969[0m
+[0;32mI (125801) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:05 1969[0m
+[0;32mI (126811) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:06 1969[0m
+[0;32mI (127821) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:07 1969[0m
+[0;32mI (128831) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:08 1969[0m
+[0;32mI (129841) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:09 1969[0m
+[0;32mI (130851) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:10 1969[0m
+[0;32mI (131861) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:11 1969[0m
+[0;32mI (132871) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:12 1969[0m
+[0;32mI (133881) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:13 1969[0m
+[0;32mI (134891) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:14 1969[0m
+[0;32mI (135901) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:15 1969[0m
+[0;32mI (136911) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:16 1969[0m
+[0;32mI (137921) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:17 1969[0m
+[0;32mI (138931) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:18 1969[0m
+[0;32mI (139941) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:19 1969[0m
+[0;32mI (140951) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:20 1969[0m
+[0;32mI (141961) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:21 1969[0m
+[0;32mI (142971) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:22 1969[0m
+[0;32mI (143981) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:23 1969[0m
+[0;32mI (144991) MX_Time: The current date/time in Shanghai is: Wed Dec 31 18:02:24 1969[0m

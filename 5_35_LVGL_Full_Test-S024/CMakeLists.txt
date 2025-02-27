@@ -9,5 +9,5 @@ set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/examples/common_components/protocol_exam
 list(APPEND EXTRA_COMPONENT_DIRS components/lvgl_esp32_drivers components/lvgl_esp32_drivers/lvgl_touch components/lvgl_esp32_drivers/lvgl_tft)
 
 if (NOT DEFINED PROJECT_NAME)
-	project(lvgl-demo)
+	project(Mexico-Weather)
 endif (NOT DEFINED PROJECT_NAME)

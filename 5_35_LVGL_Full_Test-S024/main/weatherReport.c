@@ -1,5 +1,11 @@
 #include "weatherReport.h"
+
 LV_FONT_DECLARE(lv_font_xjz_12)
+
+static void weather_timer_callback(TimerHandle_t xTimer) {
+    // 在这里执行你需要的任务，例如发起HTTP请求
+    xTaskCreate(http_client_task, "http_client", 5120, NULL, 3, NULL);
+}
 static void freeBuffer(char* buf, int bufSize){
 	memset(buf, 0, bufSize);
 }
@@ -170,7 +176,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
 			WiFi_retry_num = 0;
 			gl_got_ip = true;
 			//start http  task
-			xTaskCreate(http_client_task, "http_client", 5120*2, NULL, 3, NULL);
+			xTaskCreate(http_client_task, "http_client", 5120, NULL, 3, NULL);
 		}
 	}
 	return;
@@ -194,6 +200,7 @@ static void initialise_wifi(void)
         .sta = {
             .ssid = WiFi_STA_SSID,
 			.password = WiFi_STA_PASSWORD,
+			.threshold.authmode = WIFI_AUTH_WPA2_PSK,
 			.bssid_set = 0,
 		}
 	};
@@ -201,15 +208,30 @@ static void initialise_wifi(void)
 	ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
     ESP_ERROR_CHECK( esp_wifi_start() );
 	ESP_LOGI(WiFi_TAG, "wifi_init_sta finished.");
+
+	weather_timer = xTimerCreate("WeatherTimer", pdMS_TO_TICKS(60*60*1000), pdTRUE, (void *)0, weather_timer_callback);
+	if(weather_timer == NULL){
+		ESP_LOGE(WiFi_TAG, "failed to create weather timer");
+	} else {
+		ESP_LOGI(WiFi_TAG, "WeatherTimer is begin.");
+	}
 }
 
 void xjz_wifi_begin(void *pvParameter)
 {
 	ESP_ERROR_CHECK(nvs_flash_init());
 	initialise_wifi();
-	while (1) {
-		vTaskDelay(pdMS_TO_TICKS(30 * 60 * 1000));//三十分钟获取一次
-		xTaskCreate(http_client_task, "http_client", 5120*2, NULL, 3, NULL);
-    }
-    vTaskDelete(NULL);      // 删除任务
+
+/*
+	esp_sntp_config_t config = ESP_NETIF_SNTP_DEFAULT_CONFIG("pool.ntp.org");
+	config.start = false;                       // start SNTP service explicitly (after connecting)
+    config.server_from_dhcp = true;             // accept NTP offers from DHCP server, if any (need to enable *before* connecting)
+    config.renew_servers_after_new_IP = true;   // let esp-netif update configured SNTP server(s) after receiving DHCP lease
+    config.index_of_first_server = 1; 
+	config.ip_event_to_renew = IP_EVENT_STA_GOT_IP;
+	config.sync_cb = time_sync_notification; // only if we need the notification function
+    esp_netif_sntp_init(&config);
+	
+	esp_netif_sntp_start();
+*/
 }

@@ -2,6 +2,8 @@
 #define __WEATHERREPORT__H_
 
 #include <string.h>
+#include <stdio.h>
+#include <time.h>
 #include <sys/param.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -12,6 +14,8 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 #include "esp_netif.h"
+#include "esp_sntp.h"
+#include "esp_netif_sntp.h"
 #include "esp_timer.h"
 #include "protocol_examples_common.h"
 #include "addr_from_stdin.h"
@@ -28,8 +32,12 @@
 #include "lvgl/lvgl.h"			// LVGL头文件
 #include "lvgl_helpers.h"		// 助手 硬件驱动相关
 /*WiFi config parameter*/
+
 #define WiFi_STA_SSID "19-8-卧室"
 #define WiFi_STA_PASSWORD "13618387733"
+/*
+#define WiFi_STA_SSID "vivox80"
+#define WiFi_STA_PASSWORD "xiaojunzhuang"*/
 #define WiFi_MAX_RETRY 15
 
 /* FreeRTOS event group to signal when we are connected & ready to make a request */
@@ -45,7 +53,8 @@ static uint8_t gl_sta_bssid[6];
 static uint8_t gl_sta_ssid[32];
 static int gl_sta_ssid_len = 0;
 static bool gl_got_ip = false;
-static lv_obj_t* img = NULL;
+//static lv_obj_t* img = NULL;
+static TimerHandle_t weather_timer;
 
 static const char *HTTP_TAG = "httpTask";
 #define MAX_HTTP_OUTPUT_BUFFER 1300
@@ -55,21 +64,16 @@ static const char *HTTP_TAG = "httpTask";
 #define Language "zh-Hans"
 #define Start "0"
 #define Days "3"
-/*
-#define IMAGENUM 1
-typedef struct {
-	lv_obj_t* MexicoTime;
-	lv_obj_t* MexicoText_day;
-	lv_obj_t* MexicoTemp;
-	lv_obj_t* rainfall;
-#if IMAGENUM == 1
-	lv_obj_t* image;
-#else
-	lv_obj_t* image[IMAGENUM];
-#endif
-}lv_ui;
-extern lv_ui *MexicoUI = NULL; */
 
+#define CONFIG_SNTP_TIME_SERVER "time.windows.com"
+static const char *TIMEZONE_TAG = "MX_Time";
+/* 墨西哥时区配置（自动处理夏令时）*/
+static const char MX_TZ[] = "CST6CDT,M4.1.0/2,M10.5.0/2";  // 墨西哥城时区规则
+// 时间同步回调函数
+static void time_sync_notification(struct timeval *tv);
+
+
+static void weather_timer_callback(TimerHandle_t xTimer);
 static void freeBuffer(char *buf, int bufSize);
 static void showChongqin(char* text);
 static void showMexico(char* Text);

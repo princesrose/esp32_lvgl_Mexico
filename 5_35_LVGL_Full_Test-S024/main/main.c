@@ -114,7 +114,6 @@ Flash按钮	IO0			25		GPIO0, ADC2_CH1, TOUCH1, RTC_GPIO11, CLK_OUT1,EMAC_TX_CLK
 #include "lv_examples/src/lv_demo_widgets/lv_demo_widgets.h"
 
 #include "weatherReport.h"
-#include "freertosTest.h"
 
 //LV_IMG_DECLARE(mouse_cursor_icon);			/*Declare the image file.*/
 
@@ -134,10 +133,6 @@ static void lv_tick_task(void *arg);
 void guiTask(void *pvParameter);				// GUI任务
 
 /*-------------------------------------------*/
-void xjztestTask(void *pvParameter){
-	printf("xjztestTask running--------\n");
-	freertosTestFun();
-}
 
 /*-------------------------------------------*/
 
@@ -148,8 +143,6 @@ void app_main() {
 	// 如果要使用任务创建图形，则需要创建固定核心任务,否则可能会出现诸如内存损坏等问题
 	// 创建一个固定到其中一个核心的FreeRTOS任务，选择核心1
 	xTaskCreatePinnedToCore(guiTask, "gui", 4096*2, NULL, 0, NULL, 1);
-	//xTaskCreatePinnedToCore(xjztestTask, "xjztest", 4096, NULL, 0, NULL, 0);
-	xTaskCreatePinnedToCore(xjz_wifi_begin, "loopGetMexcioTime", 4096, NULL, 0, NULL, 0);
 }
 
 static void lv_tick_task(void *arg) {
@@ -230,8 +223,10 @@ void guiTask(void *pvParameter) {
 	//lv_img_set_src(cursor_obj, &mouse_cursor_icon);             //Set the image source
 	//lv_indev_set_cursor(mouse_indev, cursor_obj);               //Connect the image  object to the driver	
 	//lv_demo_widgets();
+	xjz_wifi_begin(NULL);
+	
     while (1) {
-		vTaskDelay(1);
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
 		// 尝试锁定信号量，如果成功，请调用lvgl的东西
 		if (xSemaphoreTake(xGuiSemaphore, (TickType_t)10) == pdTRUE) {
             lv_task_handler();

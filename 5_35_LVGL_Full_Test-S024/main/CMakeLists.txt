@@ -1,4 +1,4 @@
-set(SOURCES freertosTest.c weatherReport.c _wepicture_alpha_180x180.c main.c)
+set(SOURCES weatherReport.c _wepicture_alpha_180x180.c main.c)
 
 idf_component_register(SRCS ${SOURCES}
                     INCLUDE_DIRS .
@@ -9,6 +9,8 @@ idf_component_register(SRCS ${SOURCES}
 					lv_examples 
 					esp_http_client 
 					json
+					esp_netif
+					lwip
 					esp_wifi
 					nvs_flash
 					protocol_examples_common
