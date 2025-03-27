@@ -58,7 +58,8 @@
 		"stdio.h": "c",
 		"lvgl.h": "c",
 		"compare": "c",
-		"cstdint": "c"
+		"cstdint": "c",
+		"inttypes.h": "c"
 	},
 	"editor.insertSpaces": false,      //不检测到第一个是tab后面都用tab
 	"editor.detectIndentation": false,      //不检测到第一个是tab后面都用tab

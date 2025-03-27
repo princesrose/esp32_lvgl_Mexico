@@ -59,8 +59,9 @@ static TimerHandle_t weather_timer;
 static const char *HTTP_TAG = "httpTask";
 #define MAX_HTTP_OUTPUT_BUFFER 1300
 #define HOST "api.seniverse.com"
-#define UserKey "S0HOCcNbHsfQKnAEl"
-#define Location "9G3W82C7N13P"
+#define UserKey "SpJxG5-ATMOQu7SI6"
+//#define Location "9G3W82C7N13P"     //墨西哥
+#define Location "WM7B0X53DZW2"
 #define Language "zh-Hans"
 #define Start "0"
 #define Days "3"

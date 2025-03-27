@@ -9,7 +9,7 @@ static void weather_timer_callback(TimerHandle_t xTimer) {
 static void freeBuffer(char* buf, int bufSize){
 	memset(buf, 0, bufSize);
 }
-static void showChongqin(char* text){
+static void showMexico(char* text){
 	char oledText[20];
 	char *date,*data1 = NULL,*data2,*humidity;
 	cJSON *root,*arrayItem,*subArray;
@@ -34,6 +34,84 @@ static void showChongqin(char* text){
 			//lv_obj_add_style(labeltital, LV_LABEL_PART_MAIN, &style_label);
 			lv_obj_set_style_local_text_font(labeltital, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, &lv_font_xjz_12);
 			lv_label_set_text(labeltital, "Mexico data:");
+			for(int j = 0; j < sub_array_size; j ++){
+				if(sub_array_item->type == cJSON_Object){
+					lv_obj_t *labeldate = lv_label_create(lv_scr_act(), labeltital);
+					lv_obj_set_pos(labeldate, j*100, 20);
+					lv_obj_t *labeltemp = lv_label_create(lv_scr_act(), labeltital);
+					lv_obj_set_pos(labeltemp, j*100, 40);
+					lv_obj_t *labelhumi = lv_label_create(lv_scr_act(), labeltital);
+					lv_obj_set_pos(labelhumi, j*100, 60);
+					lv_obj_t *labelday = lv_label_create(lv_scr_act(), labeltital);
+					lv_obj_set_pos(labelday, j*100, 80);
+
+					JsonDate =  cJSON_GetObjectItem(sub_array_item, "date");
+					if(cJSON_IsString(JsonDate)){
+						date = JsonDate->valuestring;
+						lv_label_set_text_fmt(labeldate, "时间:%s", date);
+					}
+					
+					JsonTemp_High =  cJSON_GetObjectItem(sub_array_item, "high");
+					if(cJSON_IsString(JsonTemp_High))
+						data1 = JsonTemp_High->valuestring;
+					
+					JsonTemp_Low =  cJSON_GetObjectItem(sub_array_item, "low");
+					if(cJSON_IsString(JsonTemp_Low)){
+						data2 = JsonTemp_Low->valuestring;
+						sprintf(oledText, "温度:%s℃-%s℃", data1, data2);
+						lv_label_set_text(labeltemp, oledText);
+						freeBuffer(oledText, 20);
+					}
+					
+					JsonHumidity =  cJSON_GetObjectItem(sub_array_item, "humidity");
+					if(cJSON_IsString(JsonHumidity)){
+						humidity = JsonHumidity->valuestring;
+						sprintf(oledText, "湿度:%s%%", humidity);
+						lv_label_set_text(labelhumi, oledText);
+						freeBuffer(oledText, 20);
+					}
+
+					Jsonday =  cJSON_GetObjectItem(sub_array_item, "text_day");
+					if(cJSON_IsString(Jsonday)){
+						data1=Jsonday->valuestring;
+						sprintf(oledText, "天气:%s", data1);
+						lv_label_set_text(labelday, oledText);
+						freeBuffer(oledText, 20);
+					}
+				}
+				sub_array_item = sub_array_item->next;
+			}
+			arr_item = arr_item -> next;
+		}
+		ESP_LOGI(HTTP_TAG, "Finish");
+	}
+	cJSON_Delete(root);
+}
+static void showChongqin(char* text){
+	char oledText[20];
+	char *date,*data1 = NULL,*data2,*humidity;
+	cJSON *root,*arrayItem,*subArray;
+	cJSON *arr_item,*sub_array_item;
+	cJSON *JsonDate,*JsonTemp_High,*JsonTemp_Low,*JsonHumidity, *Jsonday;
+	root = cJSON_Parse(text);
+	if(root!=NULL)
+	{
+		arrayItem = cJSON_GetObjectItem(root,"results");
+		//ESP_LOGE(HTTP_TAG, "Data IS json");
+		int arr_size = cJSON_GetArraySize(arrayItem);
+		ESP_LOGI(HTTP_TAG, "root_arr_size: %d \n", arr_size);
+		arr_item = arrayItem->child;
+		for(int i = 0; i < arr_size; i ++){
+			subArray = cJSON_GetObjectItem(arr_item, "daily");
+			int sub_array_size = cJSON_GetArraySize(subArray);
+			sub_array_item = subArray->child;
+			ESP_LOGI(HTTP_TAG, "sub_arr_size: %d \n", sub_array_size);
+			lv_obj_t *labeltital = lv_label_create(lv_scr_act(), NULL);
+			//static lv_style_t style_label;
+			//lv_style_set_text_font(&style_label, LV_STATE_DEFAULT, &lv_font_xjz_12);
+			//lv_obj_add_style(labeltital, LV_LABEL_PART_MAIN, &style_label);
+			lv_obj_set_style_local_text_font(labeltital, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, &lv_font_xjz_12);
+			lv_label_set_text(labeltital, "chongqing data:");
 			for(int j = 0; j < sub_array_size; j ++){
 				if(sub_array_item->type == cJSON_Object){
 					lv_obj_t *labeldate = lv_label_create(lv_scr_act(), labeltital);

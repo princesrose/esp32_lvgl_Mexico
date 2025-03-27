@@ -131,7 +131,7 @@ Flash按钮	IO0			25		GPIO0, ADC2_CH1, TOUCH1, RTC_GPIO11, CLK_OUT1,EMAC_TX_CLK
 
 static void lv_tick_task(void *arg);
 void guiTask(void *pvParameter);				// GUI任务
-
+void testTask(void *pvParameter);				// test任务
 /*-------------------------------------------*/
 
 /*-------------------------------------------*/
@@ -143,6 +143,7 @@ void app_main() {
 	// 如果要使用任务创建图形，则需要创建固定核心任务,否则可能会出现诸如内存损坏等问题
 	// 创建一个固定到其中一个核心的FreeRTOS任务，选择核心1
 	xTaskCreatePinnedToCore(guiTask, "gui", 4096*2, NULL, 0, NULL, 1);
+	xTaskCreatePinnedToCore(testTask, "testTask", 4096, NULL, 0, NULL, 0);
 }
 
 static void lv_tick_task(void *arg) {
@@ -236,4 +237,16 @@ void guiTask(void *pvParameter) {
     vTaskDelete(NULL);      // 删除任务
 }
 
-
+SemaphoreHandle_t xTaskSemaphore;		// 创建一个GUI信号量
+#define TESTTASK_TAG "testTask"
+void testTask(void *pvParameter) {
+    
+    (void) pvParameter;
+    xTaskSemaphore = xSemaphoreCreateMutex();    // 创建GUI信号量
+	int i = 0;
+    while (1) {
+		vTaskDelay(10000 / portTICK_PERIOD_MS);
+		ESP_LOGI(TESTTASK_TAG, "hello, this is num : %d \n", i++);
+    }
+    vTaskDelete(NULL);      // 删除任务
+}
